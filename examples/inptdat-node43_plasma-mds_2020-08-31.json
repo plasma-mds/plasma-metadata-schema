@@ -1,0 +1,60 @@
+{
+    "help": "Return the metadata of a dataset (package) and its resources. :param id: the id or name of the dataset :type id: string",
+    "success": true,
+    "result": {
+        "id": "001a090e-9e86-4983-a1e9-e99280be0e6e",
+        "url": "https://www.inptdat.de/node/43",
+        "source": {
+            "name": "ntAPPJ, HF plasma jet",
+            "application": "PECVD",
+            "specification": "AC, atmospheric pressure, non-thermal, high frequency",
+            "properties": "Non-thermal atmospheric pressure plasma jet (capacitively coupled) operated in a self-organized regime (locked mode). Power: 7 to 9 W; Frequency: 27.12 MHz; Flow rate: 400 to 800 sccm argon; Electrodes: ring configuration, distance 5 mm, width 5 mm; Capillary: inner diameter 4 mm, outer diameter 6 mm",
+            "procedure": "The measurements occur 30 minutes after temperature conditioning of the plasma source for each parameter setting."
+        },
+        "medium": {
+            "name": "Ar",
+            "properties": "Flowrate: 0.4 to 0.8 slm; Pressure: 1 bar; Temperature: 300 to 1000 K; Purity: argon 6.0",
+            "procedure": "Standard conditions of the argon gas are assured."
+        },
+        "target": [],
+        "diagnostics": {
+            "name": "laser schlieren deflectometry, fast imaging",
+            "properties": "<p>The filament behaviour has been visualized optically by means of imaging. The LSD set-up consists of a He-Ne laser (Linos) and a high-speed CMOS camera (Photon Focus). The image sensor has 1312\u00d71082 pixels, pixel size 8 \u00b5m. The laser beam is classified as 3 A, 632.82 nm, cw. The output power of the laser is 0.6 W. The laser beam is specified by the spot diameter of 490 \u00b5m and beam divergence of 1.7 mrad. The parameters of the beam enable to characterize filament structures with diameters down to approx. 100 \u00b5m.</p>\n",
+            "procedure": "<p>The displacement of the laser spot on the image sensor  of the camera is monitored directly. The laser beam is led perpendicular through the effluent region, close to the nozzle of the capillary (z = 0 mm). The output power of the laser is sufficiently low to avert any influence of the beam on the properties of the plasma jet. Deflection of the laser beam due to refraction in the gradient field of the refractive index is recorded at a distance of 80.6 cm from the plasma jet at 10 kHz sample frequency.</p>\n"
+        },
+        "resource": [
+            {
+                "id": "651d9abd-19d0-408a-92f8-ceb31a1a71a2",
+                "url": "https://www.inptdat.de/system/files/node43_data-table_7w.csv",
+                "filetype": "csv",
+                "datatype": "data table",
+                "range": "Power: 7 W; Rotation frequency range: 0 to 90 Hz",
+                "quality": "published"
+            },
+            {
+                "id": "5bea06a7-f209-4f3d-a7a8-2032f7082189",
+                "url": "https://www.inptdat.de/system/files/node43_data-table_8w.csv",
+                "filetype": "csv",
+                "datatype": "data table",
+                "range": "Power: 8 W; Rotation frequency range: 0 to 90 Hz",
+                "quality": "published"
+            },
+            {
+                "id": "ae4a4f2d-6206-4bd8-b725-ed824714a792",
+                "url": "https://www.inptdat.de/system/files/node43_data-table_9w.csv",
+                "filetype": "csv",
+                "datatype": "data table",
+                "range": "Power: 9 W; Rotation frequency range: 0 to 90 Hz",
+                "quality": "published"
+            },
+            {
+                "id": "80ec2c75-b909-4e0c-a966-ef5ddd9d929c",
+                "url": "https://www.inptdat.de/system/files/node43_image_inclination.png",
+                "filetype": "png",
+                "datatype": "high-speed image",
+                "range": "Power: 7 to 9 W; Gas flow rate: 0.4 to 0.7 slm",
+                "quality": "verified"
+            }
+        ]
+    }
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "https://www.plasma-mds.org/schema/plasma-mds.json#",
+  "title": "Plasma Metadata Schema (Plasma-MDS)",
+  "description": "Metadata schema for annotation of research data (datasets) in the field of plasma science and technology. Aims to be attached to generic schemata like DCAT or DataCite Metadata Schema. Validates a Plasma-MDS extension.",
+  "type": "object",
+  "properties": 
+    {
+    "id": 
+      {
+        "title": "UUID",
+        "description": "System UUID for object identification.",
+        "type": "string"
+      },
+    "url": 
+      {
+        "title": "URL",
+        "description": "Landing page (URL) of the dataset.",
+        "type": "string"
+      },
+    "source": 
+      {
+      "title":"Plasma Source",
+      "description": "Device which creates the plasma by (partially) ionizing a given medium.",  
+      "type": "object",
+      "properties": 
+        {
+        "name": 
+          {
+            "title": "Source Name",
+            "description": "Name and/or type of the plasma source used in the study. Examples: kINPen, COST Jet, CCP.",
+            "type": "string"
+          },
+        "application": 
+          {
+            "title": "Source Application",
+            "description": "Application the plasma source is used for. Examples: decontamination, PECVD, etching.",
+            "type": "string"
+          },
+        "specification": 
+          {
+            "title": "Source Specification",
+            "description": "Technical specification of the plasma source (waveform, frequency range, pressure range, temperature range).",
+            "type": "string"
+          },
+        "properties": 
+          {
+            "title": "Source Properties",
+            "description": "Properties of the plasma source, e.g. geometry, power, current/voltage amplitude. Format is open. Example: power: 7 to 9 W; frequency: 27.12 MHz; electrodes: ring configuration, distance 5 mm, width 5 mm; capillary: inner diameter 4 mm, outer diameter 6 mm.",
+            "type": "string"
+          },
+        "procedure": 
+          {
+            "title": "Source Procedure",
+            "description": "Procedure to prepare and use the plasma source. This field should be used to described the whole procedure, including medium and target. Format is open. Example: 15 min free run before treatment.",
+            "type": "string"
+          }
+        }
+      },
+    "medium": 
+      {
+      "title":"Plasma Medium",
+      "description": "Gas, mixture of gases, or other substance, which is either (partially) ionized or otherwise activated by a source device.",
+      "type": "object",
+      "properties": 
+        {
+        "name": 
+          {
+            "title": "Medium Name",
+            "description": "Name of the medium the plasma source is operated in. Examples: dry air, Ar, CO2, water.",
+            "type": "string"
+          },
+        "properties": 
+          {
+          "title": "Medium Properties",
+          "description": "Properties of the medium, e.g. carrier gas (mixture). Format is open. Example: gas fow rate: 100 sccm; carrier gas: Ar; precursor: HMDSO; gas mixture: Ar with 10 ppm HMDSO.",
+          "type": "string"
+          },
+        "procedure": 
+          {
+            "title": "Medium Procedure",
+            "description": "Standard procedure to prepare the medium (pre-treatment). Format is open. Example: gas flow has to be established for at least 30 s before plasma ignition.",
+            "type": "string"
+          }
+        }
+      },
+    "target": 
+      {
+      "title":"Plasma Target",
+      "description": "Substrate the plasma acts on, directly (target is/was in contact with a plasma) or mediated by an additional substance.",
+      "type": "object",
+      "properties": 
+        {
+        "name": 
+          {
+            "title": "Target Name",
+            "description": "Name of the target name the plasma source is acting on either directly or mediated by the above named medium. Examples: Si waver, distilled water, Escherichia coli.",
+            "type": "string"
+          },
+        "properties": 
+          {
+            "title": "Target Properties",
+            "description": "Properties of the target. Format is open. Example: silicon wafer: 100 mm diameter, prime grade, orientation 100.",
+            "type": "string"
+          },
+        "procedure": 
+          {
+            "title": "Target Procedure",
+            "description": "Standard procedure to prepare the target (pre-treatment). Format is open. Example: E. coli prepared on glass substrate according to internal procedure XY.",
+            "type": "string"
+          }
+        }
+      },
+    "diagnostics": 
+      {
+      "title":"Diagnostics",
+      "description": "Measurement, modeling, or simulation method used to produce the digital resource.",
+      "type": "object",
+      "properties": 
+        {
+        "name": 
+          {
+            "title": "Diagnostics Name",
+            "description": "Name of the applied diagnostics and/or modelling/simulation methods. Examples: OES, SEM, PIC-MCC.",
+            "type": "string"
+          },
+        "properties": 
+          {
+            "title": "Diagnostics Properties",
+            "description": "Details of the applied diagnostics. Format is open. Example: laser diode at 395 nm and 50 mW.",
+            "type": "string"
+          },
+        "procedure": 
+          {
+            "title": "Diagnostics Procedure",
+            "description": "Description of the diagnostic procedure. Format is open. Example: Voltage was measured between the contact tube of the welding torch and the workpiece.",
+            "type": "string"
+          }
+        }
+      },
+    "resource": {
+      "title":"Resource",
+      "description":"Digital object obtained by diagnostics",
+      "anyOf": [
+        {
+        "type": "array",
+        "items": 
+          {
+          "type": "object",
+          "properties": 
+            {
+            "id": 
+              {
+                "title": "UUID",
+                "description": "System UUID for object identification.",
+                "type": "string"
+              },
+            "url": 
+              {
+                "title": "URL",
+                "description": "Download link (URL) of the resource.",
+                "type": "string"
+              },
+            "filetype": 
+              {
+                "title": "Resource Filetype",
+                "description": "File type of the resource. Examples: csv, pdf, png, txt.",
+                "type": "string"
+              }, 
+            "datatype": 
+              {
+                "title": "Resource Datatype",
+                "description": "Data type of the resource. Examples: data table, SEM image, cfu-plot, high-speed video.",
+                "type": "string"
+              },
+            "range": 
+              {
+                "title": "Resource Range",
+                "description": "Range in which the resource is valid. Example: wavelength range: 400-800 nm.",
+                "type": "string"
+              },
+            "quality": 
+              {
+                "title": "Resource Quality",
+                "description": "Data quality score. One of: verified, published, reviewed.",
+                "type": "string",
+                "enum": ["verified","published","reviewed"]
+              }
+            }
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  }
+}

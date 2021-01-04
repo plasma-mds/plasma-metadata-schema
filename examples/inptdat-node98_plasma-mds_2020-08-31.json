@@ -1,0 +1,40 @@
+{
+    "help": "Return the metadata of a dataset (package) and its resources. :param id: the id or name of the dataset :type id: string",
+    "success": true,
+    "result": {
+        "id": "aa998c4a-ccbe-4563-a96c-dc3169bace53",
+        "url": "https://www.inptdat.de/node/98",
+        "source": {
+            "name": "kHz plasma jet",
+            "application": "reactive species generation",
+            "specification": "AC, low frequency, atmospheric pressure, non-thermal",
+            "properties": "The plasma was ignited in a quartz tube (4 mm ID and 6 mm OD, 100 mm length) surrounded by copper electrodes (10 mm width) separated by 20 mm. A PVM500 Plasma Resonant and Dielectric Barrier Corona Driver power supply (Information Unlimited) was used to sustain the plasma. The distance between the electrodes was 20 mm in all experiments. Voltage and frequency were kept constant throughout all experiments at 18.3 \u00b1 0.2 kV (peak-to-peak) and 24.9 kHz, respectively. The return current values were between ca. 4 and 7 mA. The experimental setup was positioned inside a large Faraday cage with the mesh size of 22 mm.",
+            "procedure": "In a typical experiment, 100 \u00b5L of liquid sample was placed in a well on top of a glass stand inside the reactor. The distance from the nozzle to the sample was 10 mm unless stated otherwise. In experiments when the samples were at the 4 mm distance from the sample to the nozzle, the distance between the live electrode and the sample was maintained at 20 mm. Thus, the plasma length from the core plasma remained the same throughout all experiments, and the ratio of its quartz surroundings changed. The reactor was flushed with the feed gas for 20 s and then exposed to plasma for 60 s."
+        },
+        "medium": {
+            "name": "He, H2O",
+            "properties": "The plasma was operated with a feed gas of helium with oxygen and water admixtures controlled by mass flow controllers (MFCs) (Brooks Instruments and Brooks Instruments 0254 microcomputer controller). All experiments were carried out with a total flow of feed gas of 2 L/min. Helium He (A Grade, 99.996%) and oxygen O\u2082 (Zero Grade, 99.6%) were supplied by BOC UK. All chemicals were used as received.",
+            "procedure": "The experiments involving different feed gas humidity were performed by using split helium flow (i.e., by mixing dry helium with water-saturated helium in desired proportions). Water-saturated helium was made by bubbling dry helium through a water-filled Drechsel flask at 20 \u00b0C. The relative humidity was determined by weighing the flask before and after the experiment and comparing the data with the available literature values."
+        },
+        "target": {
+            "name": "H2O2, H2SO4, NaN3, D2O, PBN, TEMP, TEMPO, sodium tosylate, H2O, DMPO, DEPMPO, potassium bis(oxalato)oxotitanate(IV) dihydrate",
+            "properties": "Hydrogen peroxide H\u2082O\u2082 (30%), sulphuric acid H\u2082SO\u2084 (&gt;95%) and sodium azide NaN\u2083 (\u226599.5%) were purchased from\r\nFluka. Deuterium oxide D\u2082O (99.9 atom% D), N-tert-butyl-\u03b1-phenylnitrone (PBN) (98%), 2,2,6,6-tetramethylpiperidine\r\n(TEMP) (\u226599%), 2,2,6,6-tetramethylpiperidine 1-oxyl (TEMPO) (98%), sodium p-toluenesulfonate (sodium tosylate)\r\n(95%), cinnamoyl chloride (98%) and H\u2082\u00b9\u2078O (97%) were obtained from Sigma-Aldrich. 5,5-Dimethyl-1-pyrroline N-oxide\r\n(DMPO) (\u226599%) and 5-diethoxyphosphoryl-5-methyl-1-pyrroline N-oxide (DEPMPO) (\u226599%) were purchased from\r\nDojindo Molecular Technologies, Inc. and Enzo Life Sciences, respectively. Potassium bis(oxalato)oxotitanate(IV)\r\ndihydrate was obtained from Alfa Aesar. H\u2082\u00b9\u2077O was purchased from Icon Isotopes. De-ionised water was used for the\r\npreparation of the solutions. All chemicals were used as received.",
+            "procedure": "In spin trapping experiments, a 100 mM solution of a spin trap (PBN, DMPO or DEPMPO) was prepared in H\u2082O, H\u2082\u00b9\u2077O or D\u2082O. Ozone was measured in 60 mM aqueous solutions of TEMP (sodium azide was added in concentrations of 100 mM where stated). In control experiments, solutions of each spin trap were treated with the plasma for the periods of 15, 30, 45 and 60 s."
+        },
+        "diagnostics": {
+            "name": "spin-trapping, isotopic labelling, EPR spectroscopy, OES",
+            "properties": "<p>A high voltage probe (Tektronix P6015A) and current probe (Ion Physics Corporation CM-100-L) were used with a Teledyne LeCroy WaveJet 354A oscilloscope to measure time resolved current and voltage.  OES measurements of the plasma between the electrodes were performed with Ocean Optics HR-4000CG-UV-NIR spectrophotometer. Electron paramagnetic resonance (EPR) measurements were carried out on a Bruker EMX Micro EPR spectrometer. The EPR analysis parameters were as follows: frequency 9.83 GHz, power 3.17 mW, modulation frequency 100 kHz, modulation amplitude 1 G, time constant 40.96 msec, number of scans 5, sweep width 100 G (DMPO and PBN adducts, TEMPO) or 170 G (DEPMPO addcuts). EPR spectra simulations were performed on NIH P.E.S.T. WinSIM software ver. 0.96. Concentration of H\u2082O\u2082 in the samples was determined by UV-Vis measurements performed on a UV-1800 Shimadzu UV-Vis Spectrophotometer with Optical Glass High Precision Cells (10 mm light path) provided by Hellma Analytics.</p>\n",
+            "procedure": "<p>UV-Vis calibration was done using 500 \u00b5L titanium(IV) reagent with added 300 \u00b5L aqueous hydrogen peroxide solutions in a range of concentrations 0.0979-4.895 mM. UV-Vis spectra of samples were recorded by adding a mixture of 65 \u00b5L of plasma-exposed sample (taken immediately after plasma exposure) with 235 \u00b5L of H2O to 500 \u00b5L of titanium(IV) reagent. The resulting solutions were incubated for 1 min before analysis. The H\u2082O\u2082 concentration was determined from the UV-Vis intensity of the peak at 400 nm.</p>\n"
+        },
+        "resource": [
+            {
+                "id": "078f8f77-a457-4637-8394-6215c65ab98d",
+                "url": "https://doi.org/10.15124/15f674be-e9ca-4a00-9ba6-3c24e70a6aa4",
+                "filetype": "html",
+                "datatype": "external resource",
+                "range": "The results of the plasma exposure of the samples (e.g., the absolute values of concentration of DMPO-OH) were largely affected by small changes in the configuration of the jet, such as the electrodes contact with the quartz tube, the depth of the tube protrusion inside the reactor, and the vertical alignment of the tube. However, while the numerical values changed, the observed trends remained persistent. For example, the concentration of DMPO-OH increased with the initial introduction of H\u2082O to He feed gas and decreased with higher H\u2082O content, the concentration of DMPO-OH was lower at 4 mm distance than 10 mm, etc. Thus, the error assessment was performed within a set configuration of the jet for several conditions. Conditions of less uniform plasma nature (i.e., in the presence of large amounts of admixtures in the feed gas) generally lead to an increase in standard deviation of the concentration values. The maximum deviation from the mean was found to be ca. 12%.",
+                "quality": "published"
+            }
+        ]
+    }
+}

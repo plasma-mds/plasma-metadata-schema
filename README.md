@@ -17,4 +17,4 @@ Plasma-MDS is distributed under a [Creative Commons Attribution 4.0 Internationa
 
 ## Acknowledgements
 
-The development of the data platform INPTDAT was funded by the Federal Ministry of Education and Research – BMBF under grant 16FDM005 and is further supported by BMBF under grant 16QK03A. The responsibility for the content of this website and the software lies with the author(s).
+The development of the initial version of Plasma-MDS was funded by the Federal Ministry of Education and Research – BMBF under grant 16FDM005. The further development of the metadata schema is currently supported by BMBF under grant 16QK03A. 

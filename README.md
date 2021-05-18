@@ -9,7 +9,8 @@ This repository is intended to provide a way for collaborative advancement of th
 
 ## Publications
 
-* Documentation of the initial version 0.9.1: [Franke, St. *et al.*, *Sci Data* **7**, 439 (2020)](https://rdcu.be/ccqQx)
+* Documentation of the initial version v1.0.0: [Franke, St. *et al.*, *Sci Data* **7**, 439 (2020)](https://rdcu.be/ccqQx)
+* Publication of the lates release: [![DOI](https://zenodo.org/badge/326775660.svg)](https://zenodo.org/badge/latestdoi/326775660)
 
 ## License
 

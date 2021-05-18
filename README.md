@@ -7,10 +7,14 @@ The Plasma Metadata Schema (Plasma-MDS) was developed to support the findability
 
 This repository is intended to provide a way for collaborative advancement of the metadata schema by the community.
 
+## Metadata Schema
+
+Plasma-MDS aims to be a starting point for the development of a standard for the categorization and documentation of digital data obtained from research in plasma physics (cf. [Franke, St. *et al.*, *Sci Data* **7**, 439 (2020)](https://rdcu.be/ccqQx)).  It comprises various metadata fields related to the plasma source, the plasma medium, the plasma target and the diagnostics (experimental or computational methods) involved in the study. Furthermore, metadata fields related to published resource (data files) are included. Plasma-MDS aims to extend generic schemata like Dublin Core by domain specific metadata elements as illustrated in the following figure:
+
 ## Publications
 
 * Documentation of the initial version v1.0.0: [Franke, St. *et al.*, *Sci Data* **7**, 439 (2020)](https://rdcu.be/ccqQx)
-* Publication of the lates release: [![DOI](https://zenodo.org/badge/326775660.svg)](https://zenodo.org/badge/latestdoi/326775660)
+* Publication of the latest release: [![DOI](https://zenodo.org/badge/326775660.svg)](https://zenodo.org/badge/latestdoi/326775660)
 
 ## License
 

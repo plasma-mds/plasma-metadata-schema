@@ -11,6 +11,10 @@ This repository is intended to provide a way for collaborative advancement of th
 
 Plasma-MDS aims to be a starting point for the development of a standard for the categorization and documentation of digital data obtained from research in plasma physics (cf. [Franke, St. *et al.*, *Sci Data* **7**, 439 (2020)](https://rdcu.be/ccqQx)).  It comprises various metadata fields related to the plasma source, the plasma medium, the plasma target and the diagnostics (experimental or computational methods) involved in the study. Furthermore, metadata fields related to published resource (data files) are included. Plasma-MDS aims to extend generic schemata like Dublin Core by domain specific metadata elements as illustrated in the following figure:
 
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-020-00771-0/MediaObjects/41597_2020_771_Fig1_HTML.png" width="500">
+
+Overview of the schema elements and qualifiers of Plasma-MDS (blue). The sketch illustrates how the domain-specific schema extends general metadata of datasets according to basic metadata schemata like Dublin Core (DC), DataCite, or DCAT (from: [Franke, St. *et al.*, *Sci Data* **7**, 439 (2020)](https://rdcu.be/ccqQx)).
+
 ## Publications
 
 * Documentation of the initial version v1.0.0: [Franke, St. *et al.*, *Sci Data* **7**, 439 (2020)](https://rdcu.be/ccqQx)

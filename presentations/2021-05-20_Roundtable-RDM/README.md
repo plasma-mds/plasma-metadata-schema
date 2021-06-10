@@ -1,1 +1,0 @@
-Presentations of the roundtable of the German Physical Society (DPG), Division Plasma Physics, on research data management (May 20, 2021, online meeting).

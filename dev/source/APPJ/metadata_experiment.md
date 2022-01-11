@@ -13,4 +13,6 @@
 | gasFlowRateValue    | Gas flow rate  [slm]   | Flow rate of the gas (mixture) in which the plasma is ignited | number  | false    |               |
 | gasTemperatureValue | Gas temperature  [K]   | Gas temperature                                              | number  | true     |               |
 | gasPressureValue    | Gas pressure  [Pa]     | Gas pressure                                                 | number  | true     |               |
-
+| ambTemperature      | Ambient temperature [°C]  | Temperature within lab/environment                           | number  | true     |               |
+| ambHumidityRel      | Ambient rel. humidity [%] | Relative humidity within lab/environment                     | number  | true     |               |
+| ambPressure         | Ambient pressure [Pa]  | Pressure within lab/environment                              | number  | true     |               |

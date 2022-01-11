@@ -1,11 +1,10 @@
 | Key                 | Title                  | Description                                                  | Type    | Required | Default value |
 | ------------------- | ---------------------- | ------------------------------------------------------------ | ------- | -------- | ------------- |
 | name                | Name                   | Name of the plasma source device                             | string  | true     |               |
-| powerValue          | Input power [W]        | Total input  power coupled into the system                   | number  | true     |               |
+| powerValue          | Power [W]              | Power dissipated in the plasma                               | number  | true     |               |
 | reflectedPower      | Reflected power  [%]   | Part of the  input power which is reflected and not coupled to the electrode | number  | false    |               |
-| frequencyValue      | Min. frequency  [Hz]   | Minimum  frequency of the voltage signal                     | number  | false    |               |
-| amplitudeValue      | Voltage  amplitude [V] | Amplitude of the  voltage signal                             | number  | false    |               |
-| dcOffsetValue       | DC offset [V]          | DC offset for  voltage or current signal                     | number  | false    |               |
+| frequencyValue      | Frequency  [Hz]        | Frequency of the voltage signal                              | number  | true     |               |
+| amplitudeValue      | Voltage  (p-p) [V]     | Peak-to-peak voltage                                         | number  | true     |               |
 | burstMode           | Burst mode             | Power supply  mode where the voltage signal is switched between on and off mode | boolean | false    |               |
 | burstPeriodValue    | Burst period [s]       | Time from the  start of one burst to the start of next burst | number  | false    |               |
 | burstCountValue     | Burst counts           | Number of cycles  in on mode                                 | number  | false    |               |

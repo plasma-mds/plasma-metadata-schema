@@ -1,5 +1,5 @@
 | Key                 | Title                     | Description                                                                       | Type    | Required | Default value |
-| ------------------- | --------------------------| --------------------------------------------------------------------------------- | ------- | -------- | ------------- |
+| ------------------- | ------------------------- | --------------------------------------------------------------------------------- | ------- | -------- | ------------- |
 | name                | Name                      | Name of the plasma source device                                                  | string  | true     |               |
 | powerValue          | Power [W]                 | Power dissipated in the plasma                                                    | number  | true     |               |
 | reflectedPower      | Reflected power  [%]      | Part of the  input power which is reflected and not coupled to the electrode      | number  | false    |               |

@@ -5,8 +5,9 @@ This folder is prepared to collect flat listings of properties, e.g. for plasma 
 ## Workflow
 
 * A subfolder structure is used to categorize entities.
-* Metadata fields are collected in tables defined in Markdown files.
+* Metadata fields are collected in tables defined in Markdown files (*.md).
 * A special table format ([read more](#Table-format-for-automated-conversion)) allows the automated generation of metadata templates for the open source electronic lab notebook [eLabFTW](https://www.elabftw.net) and JSON schema definitions which can be used, e.g. for automated form generation and metadata validation.
+* **Do not change other than the Markdown files** (e.g. *.tpl, *.json) since these changes would be overwritten upon saving.
 
 ## Supportive tools
 

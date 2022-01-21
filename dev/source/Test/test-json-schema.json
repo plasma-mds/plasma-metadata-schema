@@ -91,8 +91,8 @@
             "type": "number"
         },
         "Test": {
-            "title": "Ambient pressure [Pa]",
-            "description": "Pressure within lab/environment",
+            "title": "Test",
+            "description": "Test",
             "type": "number"
         }
     },

@@ -17,5 +17,5 @@
 | ambTemperature      | Ambient temperature [°C]  | Temperature within lab/environment                                                | number  | true     |               |
 | ambHumidityRel      | Ambient rel. humidity [%] | Relative humidity within lab/environment                                          | number  | true     |               |
 | ambPressure         | Ambient pressure [Pa]     | Pressure within lab/environment                                                   | number  | true     |               |
-| Test                | Ambient pressure [Pa]     | Pressure within lab/environment                                                   | number  | true     |               |
+| Test                | Test     | Test                                                   | number  | true     |               |
 

@@ -8,6 +8,18 @@ This folder is prepared to collect flat listings of properties, e.g. for plasma 
 * Metadata fields are collected in tables defined in Markdown files.
 * A special table format ([read more](#Table-format-for-automated-conversion)) allows the automated generation of metadata templates for the open source electronic lab notebook [eLabFTW](https://www.elabftw.net) and JSON schema definitions which can be used, e.g. for automated form generation and metadata validation.
 
+## Supportive tools
+
+The open source electronic lab notebook [eLabFTW](https://www.elabftw.net) is considered as a practical solution to bring standardized templates for documentation of experiments into the labs. The *.tpl files provided in this repository can loaded as template into eLabFTW ([read more](doc.elabftw.net/user-guide.html#templates)). Alternatively, the content of the *.tpl files can be copied as source code to eLabFTW experiments (new experiment -> view -> source code -> paste the source of the relevant *.tpl file(s) to a new experiment).
+
+The creation of individual templates or JSON schema files or small modifications are simplified by the tool [markdown2json-converter](https://github.com/plasma-mds/markdown2json-converter):
+
+* Open the tool at https://csihda.github.io/markdown2json-converter/.
+* Paste the Markdown source code of a [compatible table](#Table-format-for-automated-conversion) to the left input field or generate a new table in proper format.
+* Click CONVERT and download the JSON schema file or the html description list.
+
+The html description list (*.tpl file) can be directly loaded into eLabFTW for use as metadata template.
+
 ## Table format for automated conversion
 
 The table must always satisfy this format
@@ -87,15 +99,3 @@ The table must always satisfy this format
 <dd>A field that accepts an array type input.</dd>
 </dl>
 ```
-
-## Supportive tools
-
-The open source electronic lab notebook [eLabFTW](https://www.elabftw.net) is considered as a practical solution to bring standardized templates for documentation of experiments into the labs. The *.tpl files provided in this repository can loaded as template into eLabFTW ([read more](doc.elabftw.net/user-guide.html#templates)). Alternatively, the content of the *.tpl files can be copied as source code to eLabFTW experiments (new experiment -> view -> source code -> paste the source of the relevant *.tpl file(s) to a new experiment).
-
-The creation of individual templates or JSON schema files or small modifications are simplified by the tool [markdown2json-converter](https://github.com/plasma-mds/markdown2json-converter):
-
-* Open the tool at https://csihda.github.io/markdown2json-converter/.
-* Paste the Markdown source code of a [compatible table](#Table-format-for-automated-conversion) to the left input field or generate a new table in proper format.
-* Click CONVERT and download the JSON schema file or the html description list.
-
-The html description list (*.tpl file) can be directly loaded into eLabFTW for use as metadata template.

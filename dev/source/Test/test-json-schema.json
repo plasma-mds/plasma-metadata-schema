@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "description": "Name of the plasma source device",
+            "type": "string"
+        },
+        "dissipatedPower": {
+            "title": "Power [W]",
+            "description": "Power dissipated in the plasma",
+            "type": "number"
+        },
+        "reflectedPower": {
+            "title": "Reflected power [%]",
+            "description": "Part of the input power which is reflected and not coupled to the electrode",
+            "type": "number"
+        },
+        "ppVoltage": {
+            "title": "Voltage (p-p) [V]",
+            "description": "Peak-to-peak voltage",
+            "type": "number"
+        },
+        "voltFrequency": {
+            "title": "Frequency [Hz]",
+            "description": "Frequency of the voltage signal",
+            "type": "number"
+        },
+        "ppCurrent": {
+            "title": "Current (p-p) [A]",
+            "description": "Peak-to-peak current",
+            "type": "number"
+        },
+        "phaseShift": {
+            "title": "Phase shift [\\u00b0]",
+            "description": "Phase shift between current and voltage",
+            "type": "number"
+        },
+        "burstMode": {
+            "title": "Burst mode",
+            "description": "Power supply mode where the voltage signal is switched between on and off mode",
+            "type": "boolean"
+        },
+        "burstPeriod": {
+            "title": "Burst period [s]",
+            "description": "Time from the start of one burst to the start of next burst",
+            "type": "number"
+        },
+        "burstCount": {
+            "title": "Burst counts",
+            "description": "Number of cycles in on mode",
+            "type": "number"
+        },
+        "gasMix": {
+            "title": "Gas (mixture)",
+            "description": "Feed gas and admixture",
+            "type": "string"
+        },
+        "feedGasFlowRate": {
+            "title": "Gas flow rate [slm]",
+            "description": "Flow rate of the feed gas in which the plasma is ignited",
+            "type": "number"
+        },
+        "addGasFlowRate": {
+            "title": "Gas admixture [sccm]",
+            "description": "Flow rate of the gas admixture",
+            "type": "number"
+        },
+        "ambGas": {
+            "title": "Ambient gas",
+            "description": "Surrounding gas, e.g. lab air",
+            "type": "string"
+        },
+        "ambTemperature": {
+            "title": "Ambient temperature [\\u00b0C]",
+            "description": "Temperature within lab/environment",
+            "type": "number"
+        },
+        "ambHumidityRel": {
+            "title": "Ambient rel. humidity [%]",
+            "description": "Relative humidity within lab/environment",
+            "type": "number"
+        },
+        "ambPressure": {
+            "title": "Ambient pressure [Pa]",
+            "description": "Pressure within lab/environment",
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "ppVoltage",
+        "voltFrequency",
+        "burstMode",
+        "gasMix",
+        "ambGas",
+        "ambTemperature",
+        "ambHumidityRel",
+        "ambPressure"
+    ]
+}

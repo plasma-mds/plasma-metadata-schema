@@ -1,4 +1,4 @@
-| | Key                 | Title                   | Description                                                                      | Type    | Required | Default value |
+|  Key                | Title                     | Description                                                                       | Type    | Required | Default value |
 | ------------------- | ------------------------- | --------------------------------------------------------------------------------- | ------- | -------- | ------------- |
 | name                | Name                      | Name of the plasma source device                                                  | string  | true     |               |
 | sn                  | Serial number             | Serial number of the plasma source device                                         | string  | true     |               |

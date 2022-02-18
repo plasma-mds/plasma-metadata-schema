@@ -80,7 +80,7 @@
             "type": "number"
         },
         "riseTimeValue": {
-            "title": "Voltage rise time [s].",
+            "title": "Voltage rise time [s]",
             "description": "Time change from a specified low value (offset) to a specified high value (amplitude)",
             "type": "number"
         },

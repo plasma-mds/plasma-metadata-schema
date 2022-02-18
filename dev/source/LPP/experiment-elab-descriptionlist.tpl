@@ -29,7 +29,7 @@
 <dd>DC offset for voltage signal</dd>
 <dt>Pulse width [ms]</dt>
 <dd>Time specifying the width of the voltage pulse</dd>
-<dt>Voltage rise time [s].</dt>
+<dt>Voltage rise time [s]</dt>
 <dd>Time change from a specified low value (offset) to a specified high value (amplitude)</dd>
 <dt>Duty cycle [%]</dt>
 <dd>Fraction of one period in which the signal is active (on-time)</dd>

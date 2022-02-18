@@ -15,7 +15,7 @@
 | amplitudeValue      | Voltage amplitude [V]     | Amplitude of the voltage signal                                                   | number  | false    |               | 
 | dcOffsetValue       | DC offset [V]             | DC offset for voltage signal                                                      | number  | false    |               | 
 | pulseWidthValue     | Pulse width [ms]          | Time specifying the width of the voltage pulse                                    | number  | false    |               | 
-| riseTimeValue       | Voltage rise time [s].    | Time change from a specified low value (offset) to a specified high value (amplitude)| number | false  |               | 
+| riseTimeValue       | Voltage rise time [s]     | Time change from a specified low value (offset) to a specified high value (amplitude)| number | false  |               | 
 | dutyCycle           | Duty cycle [%]            | Fraction of one period in which the signal is active (on-time)                    | number  | false    |               | 
 | rampSymmetryValue   | Ramp symmetry [%]         | Rise time to fall time ratio                                                      | number  | false    |               | 
 | PulseMode           | Pulse mode                | Power supply mode where the voltage signal is switched between on and off mode    | boolean | false    |               | 

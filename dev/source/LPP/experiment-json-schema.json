@@ -1,0 +1,143 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "description": "Name of the plasma source device",
+            "type": "string"
+        },
+        "sn": {
+            "title": "Serial number",
+            "description": "Serial number of the plasma source device",
+            "type": "string"
+        },
+        "commercial": {
+            "title": "Commercial product",
+            "description": "Is the plasma source commercially available?",
+            "type": "string"
+        },
+        "developedBy": {
+            "title": "Developer",
+            "description": "Name of the institution / group where the plasma source has been developed",
+            "type": "string"
+        },
+        "describedBy": {
+            "title": "Documentation",
+            "description": "Publication or other report describing the plasma source",
+            "type": "string"
+        },
+        "powerValue": {
+            "title": "Input power [W]",
+            "type": "number"
+        },
+        "reflectedPower": {
+            "title": "Reflected power [%]",
+            "description": "Part of the input power which is reflected and not coupled to the electrode",
+            "type": "number"
+        },
+        "powerSupply": {
+            "title": "Power supply",
+            "description": "Type of the input power",
+            "type": "string"
+        },
+        "currentValue": {
+            "title": "Current [A]",
+            "description": "Applied current",
+            "type": "string"
+        },
+        "waveform": {
+            "title": "Waveform",
+            "description": "Shape of voltage signal",
+            "type": "string"
+        },
+        "voltageValue": {
+            "title": "Applied voltage [V]",
+            "description": "External voltage applied to the system",
+            "type": "number"
+        },
+        "frequencyValue": {
+            "title": "Frequency [Hz]",
+            "description": "Frequency of the voltage signal",
+            "type": "number"
+        },
+        "amplitudeValue": {
+            "title": "Voltage amplitude [V]",
+            "description": "Amplitude of the voltage signal",
+            "type": "number"
+        },
+        "dcOffsetValue": {
+            "title": "DC offset [V]",
+            "description": "DC offset for voltage signal",
+            "type": "number"
+        },
+        "pulseWidthValue": {
+            "title": "Pulse width [ms]",
+            "description": "Time specifying the width of the voltage pulse",
+            "type": "number"
+        },
+        "riseTimeValue": {
+            "title": "Voltage rise time [s].",
+            "description": "Time change from a specified low value (offset) to a specified high value (amplitude)",
+            "type": "number"
+        },
+        "dutyCycle": {
+            "title": "Duty cycle [%]",
+            "description": "Fraction of one period in which the signal is active (on-time)",
+            "type": "number"
+        },
+        "rampSymmetryValue": {
+            "title": "Ramp symmetry [%]",
+            "description": "Rise time to fall time ratio",
+            "type": "number"
+        },
+        "PulseMode": {
+            "title": "Pulse mode",
+            "description": "Power supply mode where the voltage signal is switched between on and off mode",
+            "type": "boolean"
+        },
+        "burstPeriodValue": {
+            "title": "Pulse period [ms]",
+            "description": "Time from the start of one burst to the start of next burst",
+            "type": "number"
+        },
+        "gasMix": {
+            "title": "Gas (mixture)",
+            "description": "Feed gas and admixture",
+            "type": "string"
+        },
+        "feedGasFlowRateMin": {
+            "title": "Min. gas flow rate [slm]",
+            "description": "Minimum flow rate of the feed gas in which the plasma is ignited",
+            "type": "number"
+        },
+        "feedGasFlowRateMax": {
+            "title": "Max. gas flow rate [slm]",
+            "description": "Maximum flow rate of the feed gas in which the plasma is ignited",
+            "type": "number"
+        },
+        "addGasFlowRateMin": {
+            "title": "Min. gas admixture [sccm]",
+            "description": "Minimum flow rate of the gas admixture",
+            "type": "number"
+        },
+        "addGasFlowRateMax": {
+            "title": "Max. gas admixture [sccm]",
+            "description": "Maximum flow rate of the gas admixture",
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "sn",
+        "commercial",
+        "developedBy",
+        "describedBy",
+        "powerValue",
+        "powerSupply",
+        "gasMix"
+    ]
+}

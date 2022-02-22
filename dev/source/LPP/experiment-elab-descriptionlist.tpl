@@ -40,13 +40,29 @@
 <dt>Pulse period [ms]</dt>
 <dd>Time from the start of one burst to the start of next burst</dd>
 <dt>Gas (mixture)</dt>
-<dd>Feed gas and admixture</dd>
-<dt>Min. gas flow rate [slm]</dt>
-<dd>Minimum flow rate of the feed gas in which the plasma is ignited</dd>
-<dt>Max. gas flow rate [slm]</dt>
-<dd>Maximum flow rate of the feed gas in which the plasma is ignited</dd>
-<dt>Min. gas admixture [sccm]</dt>
-<dd>Minimum flow rate of the gas admixture</dd>
-<dt>Max. gas admixture [sccm]</dt>
-<dd>Maximum flow rate of the gas admixture</dd>
+<dd>Gas or gas mixture in which the plasma is ignited</dd>
+<dt>Gas flow rate [sccm]</dt>
+<dd>Flow rate of the gas (mixture) in which the plasma is ignited</dd>
+<dt>Precursor type</dt>
+<dd>Precursor type used</dd>
+<dt>Precursor name</dt>
+<dd>Chemical description of precursor</dd>
+<dt>precursorflow</dt>
+<dd>Precursor flow</dd>
+<dt>Gas temperature [K]</dt>
+<dd>Minimum gas temperature</dd>
+<dt>Gas pressure [Pa]</dt>
+<dd>Minimum gas pressure</dd>
+<dt>Background pressure [Pa]</dt>
+<dd>Pressure in chamber before gas filling</dd>
+<dt>Pump speed [l s^(-1)]</dt>
+<dd>pump speed</dd>
+<dt>Electrode type</dt>
+<dd>Electrode configuration</dd>
+<dt>Material of electrodes</dt>
+<dd>Material</dd>
+<dt>Chamber volume [l]</dt>
+<dd>Volume of the plasma chamber</dd>
+<dt>Discharge type</dt>
+<dd>Used discharge</dd>
 </dl>

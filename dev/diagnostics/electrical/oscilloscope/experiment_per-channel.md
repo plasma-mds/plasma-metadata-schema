@@ -1,7 +1,7 @@
 | Key|Title|Description|Type|Required|Default value|
 |-|-|-|-|-|-|
 |aquisitionMode|Acquisition mode|Mode for data acquisition (e.g. normal, average, envelope)|string|true||
-|adaptor|Adaptor|Adaptor used for connector type change or attenuation (e.g BNC to SMA, |20 dB attenuation) |string |true||
+|adaptor|Adaptor|Adaptor used for connector type change or attenuation (e.g BNC to SMA, 20 dB attenuation) |string |true||
 |adaptorAttenuation |Adaptor attenuation [dB] |Attenuation of the adaptor (only for attenuators) |number |false||
 |adaptorTermination |Adaptor termination [Ohm] |Termination of the adaptor |number |false||
 |adaptorBandwidth |Adaptor bandwidth [Hz] |Bandwidth of the adaptor |number |false||

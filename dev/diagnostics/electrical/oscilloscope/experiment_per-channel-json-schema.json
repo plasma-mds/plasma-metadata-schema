@@ -1,0 +1,85 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "aquisitionMode": {
+            "title": "Acquisition mode",
+            "description": "Mode for data acquisition (e.g. normal, average, envelope)",
+            "type": "string"
+        },
+        "adaptor": {
+            "title": "Adaptor",
+            "description": "Adaptor used for connector type change or attenuation (e.g BNC to SMA, 20 dB attenuation)",
+            "type": "string"
+        },
+        "adaptorAttenuation": {
+            "title": "Adaptor attenuation [dB]",
+            "description": "Attenuation of the adaptor (only for attenuators)",
+            "type": "number"
+        },
+        "adaptorTermination": {
+            "title": "Adaptor termination [Ohm]",
+            "description": "Termination of the adaptor",
+            "type": "number"
+        },
+        "adaptorBandwidth": {
+            "title": "Adaptor bandwidth [Hz]",
+            "description": "Bandwidth of the adaptor",
+            "type": "number"
+        },
+        "inputCoupling": {
+            "title": "Input coupling",
+            "description": "Options are AC, DC, GND",
+            "type": "string"
+        },
+        "bandwidth": {
+            "title": "Bandwidth [Hz]",
+            "description": "Bandwidth (depends on internal channel termination)",
+            "type": "number"
+        },
+        "internalTermination": {
+            "title": "Internal termination [Ohm]",
+            "description": "Internal termination for impedance (miss-)matching",
+            "type": "number"
+        },
+        "verticalRange": {
+            "title": "Vertical range [V]",
+            "description": "Volt per scale section (e.g. x10 equals the total height)",
+            "type": "number"
+        },
+        "delay": {
+            "title": "Delay [s]",
+            "description": "Delay to trigger point",
+            "type": "number"
+        },
+        "offset": {
+            "title": "Offset [V]",
+            "description": "Offset voltage",
+            "type": "number"
+        },
+        "deskew": {
+            "title": "Deskew [s]",
+            "description": "Delay between channels for signal runtime compensation (e.g. cable lengths)",
+            "type": "number"
+        },
+        "externalProbes": {
+            "title": "External probes",
+            "description": "Connected probes used for measurements",
+            "type": "string"
+        }
+    },
+    "required": [
+        "aquisitionMode",
+        "adaptor",
+        "inputCoupling",
+        "bandwidth",
+        "verticalRange",
+        "delay",
+        "offset",
+        "deskew",
+        "externalProbes"
+    ]
+}

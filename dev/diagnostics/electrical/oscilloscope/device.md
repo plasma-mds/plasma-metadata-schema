@@ -15,8 +15,3 @@
 |sampleRateMax|Max. sample rate [GS/s]|Maximum sample rate of the device|number|true||
 |memoryDepth|Memory depth [samples]|Maximum possible record length for one acquisition|number|true||
 |verticalResolution|Vertical resolution|Dynamic range of the AD converter in bit|number|true||
-|inputVoltageMax1|Max. input voltage [V]|Maximum input voltage for channel1 (depends on termination)|number|true||
-|termination1|Termination Ch. 1 [Ohm]|Termination for each channel (50 Ohm / 1 MOhm)|number|true||
-|inputVoltageMax1|Max. input voltage Ch. 1 [V]|Maximum input voltage for each channel (depends on termination)|number|true||
-|termination2|Termination Ch. 2 [Ohm]|Termination for each channel (50 Ohm / 1 MOhm)|number|true||
-|inputVoltageMax2|Max. input voltage Ch. 2 [V]|Maximum input voltage for each channel (depends on termination)|number|true||

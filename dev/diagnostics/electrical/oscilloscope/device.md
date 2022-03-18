@@ -1,6 +1,6 @@
-| Key                 | Title                     | Description                                                                       | Type    | Required | Default value |
-| ------------------- | ------------------------- | --------------------------------------------------------------------------------- | ------- | -------- | ------------- |
-| name                | Name                      | Name of the device                                                                | string  | true     |               |
+| Key|Title|Description|Type|Required|Default value|
+|-|-|-|-|-|-|
+|name|Name|Name of the device|string|true||
 |serialNumber|Serial number|Serial number of the device|string|true||
 |placeLab|Place / laboratory|Lab number / specific position in the lab|string|true||
 |contact|Responsible contact|Contact person / lab responsible|string|true||

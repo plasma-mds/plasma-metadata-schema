@@ -1,4 +1,4 @@
-|  Key                      | Title                        | Descriptio                                  | Type    | Required | Default value                      |
+|  Key                      | Title                        | Description                                 | Type    | Required | Default value                      |
 | --------------------------| -----------------------------| --------------------------------------------| ------- | -------- | -----------------------------------|
 | ElectrodeSize             | Electrode size [mm]          | size of electrode + asymmetry factor        | number  | true     |                                    | 
 | ElectrodeDistance         | Electrode distance [mm]      | Distance between electrodes                 | number  | true     |                                    |

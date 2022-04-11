@@ -1,9 +1,9 @@
-# Plasma Metadata Schema (PlasmaMDS)
+# Plasma Metadata Schema (Plasma-MDS)
 This repository contains the schema and example files for Plasma-MDS.
 
 ## Aim
 
-The Plasma Metadata Schema (PlasmaMDS) was developed to support the findability and reusability of research data in applied plasma physics and plasma medicine. So far, it is implemented in the [INPTDAT](https://www.inptdat.de/) data platform and the research data repository of the Research Department Plasmas with Complex Interactions at Ruhr Universität Bochum ([https://rdpcidat.rub.de](https://rdpcidat.rub.de/)).
+The Plasma Metadata Schema (Plasma-MDS) was developed to support the findability and reusability of research data in applied plasma physics and plasma medicine. So far, it is implemented in the [INPTDAT](https://www.inptdat.de/) data platform and the research data repository of the Research Department Plasmas with Complex Interactions at Ruhr Universität Bochum ([https://rdpcidat.rub.de](https://rdpcidat.rub.de/)).
 
 This repository is intended to provide a way for collaborative advancement of the metadata schema by the community. Therefore, the folder `dev/` is prepared to collect flat listings of properties, e.g. for plasma sources, media, substrates, diagnostics etc., which are considered to be relevant for a proper documentation of these entities. Further information on the structure and how one can contribute is given in [dev/README.md](dev/README.md).
 

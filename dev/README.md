@@ -1,4 +1,4 @@
-# How to contribute to the further development of PlasmaMDS
+# How to contribute to the further development of Plasma-MDS
 
 This folder is prepared to collect flat listings of properties, e.g. for plasma sources, media, substrates, methods etc., which are considered to be relevant for a proper documentation of these entities.
 

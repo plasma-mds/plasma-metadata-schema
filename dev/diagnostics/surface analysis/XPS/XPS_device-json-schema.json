@@ -7,7 +7,7 @@
     "properties": {
         "name": {
             "title": "Name",
-            "description": "Name of the plasma source device",
+            "description": "Name of the XPS device",
             "type": "string"
         },
         "sn": {

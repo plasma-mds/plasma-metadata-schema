@@ -1,6 +1,6 @@
 <dl>
 <dt>Name</dt>
-<dd>Name of the plasma source device</dd>
+<dd>Name of the XPS device</dd>
 <dt>Serial number</dt>
 <dd>Serial number of the device</dd>
 <dt>Developer</dt>

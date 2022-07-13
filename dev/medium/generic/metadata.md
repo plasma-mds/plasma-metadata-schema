@@ -1,5 +1,0 @@
-| Field                    | Definition                                                | Example                                                      |
-| ------------------------ | --------------------------------------------------------- | ------------------------------------------------------------ |
-| plasma.medium.name       | medium name the plasma source is operated in              | Ar, CO2 , H2O, air                                           |
-| plasma.medium.properties | properties of the medium the plasma source is operated in | gas flow rate: 100 sccm, carrier gas: Ar, precursor: HMDSO, gas mixture: Ar with 10 ppm HMDSO |
-| plasma.medium.procedure  | procedure to prepare the medium                           | gas flow has to be established for at least 30 s before plasma ignition |

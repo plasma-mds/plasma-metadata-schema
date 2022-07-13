@@ -1,5 +1,0 @@
-| Field                         | Definition                                                   | Example                                                      |
-| ----------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| plasma.diagnostics.name       | name of the applied diagnostics or modelling/simulation method | OES, LSD, LAAS, XPS, SEM, PIC-MCC, fluid-Poisson model       |
-| plasma.diagnostics.properties | properties of the applied diagnostics which are not part of the resource metadata | laser diode at 395 nm and 50 mW                              |
-| plasma.diagnostics.procedure  | details of the applied diagnostic procedures which are not part of the resource metadata | voltage is measured between the contact tube of the welding torch and the workpiece |

@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "plasma.resource.filetype": {
+            "title": "File type",
+            "description": "file type of the resource data. E.g. csv, jpg, pdf",
+            "type": "string"
+        },
+        "plasma.resource.datatype": {
+            "title": "Data type",
+            "description": "kind of digital data which are saved with the resource. E.g. data table, SEM image, cfu-plot, high-speed video",
+            "type": "string"
+        },
+        "plasma.resource.range": {
+            "title": "Range",
+            "description": "range in which the resource is valid. E.g. wavelength range: 400\\u2026800 nm",
+            "type": "string"
+        },
+        "plasma.resource.quality": {
+            "title": "Quality",
+            "description": "data quality score. E.g. verified, published, reviewed",
+            "type": "string"
+        }
+    },
+    "required": [
+        "plasma.resource.filetype",
+        "plasma.resource.datatype",
+        "plasma.resource.range",
+        "plasma.resource.quality"
+    ]
+}

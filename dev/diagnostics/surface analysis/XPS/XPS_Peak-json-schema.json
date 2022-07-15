@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "PeakName": {
+            "title": "XPS peak name",
+            "description": "Name of the measured peak including the orbital (e.g. O1s, SURV)",
+            "type": "string"
+        },
+        "PassEnergy": {
+            "title": "ValuePass energy [eV]",
+            "description": "Value of pass energy for FAT",
+            "type": "number"
+        },
+        "RetardationValue": {
+            "title": "Retardation ratio",
+            "description": "Retardation ratio (eV)",
+            "type": "number"
+        },
+        "LowerBE": {
+            "title": "XPS lower binding energy [eV]",
+            "description": "Lower Binding energy of measurement",
+            "type": "number"
+        },
+        "UpperBE": {
+            "title": "XPS upper binding energy [eV]",
+            "description": "Upper Binding energy of measurement",
+            "type": "number"
+        },
+        "AcquisitionTime": {
+            "title": "Acquisition time",
+            "description": "Total signal accumulation time",
+            "type": "number"
+        },
+        "StepWidth": {
+            "title": "XPS step width [eV]",
+            "description": "Step width of detailed XPS measurement",
+            "type": "number"
+        },
+        "ScanNumber": {
+            "title": "Number of scans",
+            "description": "Number of scans for one peak",
+            "type": "number"
+        }
+    },
+    "required": [
+        "PeakName",
+        "PassEnergy",
+        "RetardationValue",
+        "LowerBE",
+        "UpperBE",
+        "AcquisitionTime",
+        "StepWidth",
+        "ScanNumber"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "ICPInductance": {
+            "title": "Inductance [mH]",
+            "description": "Inductance of coil system",
+            "type": "number"
+        },
+        "ICPCoilValue": {
+            "title": "Coils",
+            "description": "Number of coils",
+            "type": "number"
+        },
+        "ICPCoilSize": {
+            "title": "Coil size",
+            "description": "Size of coil",
+            "type": "number"
+        },
+        "ICPCoilType": {
+            "title": "Coil type",
+            "description": "Type of coil e.g. flat/solenoid also internal/external",
+            "type": "string"
+        },
+        "ICPCoilDistance": {
+            "title": "Distance coil/plasma",
+            "description": "Distance between coil and plasma",
+            "type": "number"
+        }
+    },
+    "required": [
+        "ICPInductance",
+        "ICPCoilValue",
+        "ICPCoilSize",
+        "ICPCoilType",
+        "ICPCoilDistance"
+    ]
+}

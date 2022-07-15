@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "plasma.target.name": {
+            "title": "Target name",
+            "description": "name of the target the plasma source is acting on, either directly or mediated by a medium. E.g. Si waver, distilled water, Escherichia coli",
+            "type": "string"
+        },
+        "plasma.target.properties": {
+            "title": "Properties",
+            "description": "properties of the target the plasma source is acting on. E.g. silicon wafer: 100 mm diameter, prime grade orientation 100, E. coli",
+            "type": "string"
+        },
+        "plasma.target.procedure": {
+            "title": "Procedure",
+            "description": "procedure to prepare the target (pre-treatment) and handling throughout plasma treatment. E.g. E. coli prepared on glass substrate according to internal procedure",
+            "type": "string"
+        }
+    },
+    "required": [
+        "plasma.target.name",
+        "plasma.target.properties",
+        "plasma.target.procedure"
+    ]
+}

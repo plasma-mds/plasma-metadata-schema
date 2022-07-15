@@ -1,0 +1,268 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "description": "Name of the plasma source device",
+            "type": "string"
+        },
+        "sn": {
+            "title": "Serial number",
+            "description": "Serial number of the plasma source device",
+            "type": "string"
+        },
+        "commercial": {
+            "title": "Commercial product",
+            "description": "Is the plasma source commercially available?",
+            "type": "string"
+        },
+        "developedBy": {
+            "title": "Developer",
+            "description": "Name of the institution / group where the plasma source has been developed",
+            "type": "string"
+        },
+        "describedBy": {
+            "title": "Documentation",
+            "description": "Publication or other report describing the plasma source",
+            "type": "string"
+        },
+        "powerValue": {
+            "title": "Input power [W]",
+            "description": "Input power of the device",
+            "type": "number"
+        },
+        "reflectedPower": {
+            "title": "Reflected power [%]",
+            "description": "Part of the input power which is reflected and not coupled to the electrode",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "powerSupply": {
+            "title": "Power supply",
+            "description": "Type of the input power",
+            "type": "string"
+        },
+        "currentValue": {
+            "title": "Current [A]",
+            "description": "Applied current",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 1
+        },
+        "waveform": {
+            "title": "Waveform",
+            "description": "Shape of voltage signal",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 1
+        },
+        "voltageValue": {
+            "title": "Applied voltage [V]",
+            "description": "External voltage applied to the system",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "frequencyValue": {
+            "title": "Frequency [Hz]",
+            "description": "Frequency of the voltage signal",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "amplitudeValue": {
+            "title": "Voltage amplitude [V]",
+            "description": "Amplitude of the voltage signal",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "dcOffsetValue": {
+            "title": "DC offset [V]",
+            "description": "DC offset for voltage signal",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "pulseWidthValue": {
+            "title": "Pulse width [ms]",
+            "description": "Time specifying the width of the voltage pulse",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "riseTimeValue": {
+            "title": "Voltage rise time [s]",
+            "description": "Time change from a specified low value (offset) to a specified high value (amplitude)",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "dutyCycle": {
+            "title": "Duty cycle [%]",
+            "description": "Fraction of one period in which the signal is active (on-time)",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "rampSymmetryValue": {
+            "title": "Ramp symmetry [%]",
+            "description": "Rise time to fall time ratio",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "PulseMode": {
+            "title": "Pulse mode",
+            "description": "Power supply mode where the voltage signal is switched between on and off mode",
+            "type": "array",
+            "items": {
+                "type": "boolean"
+            },
+            "maxItems": 1
+        },
+        "burstPeriodValue": {
+            "title": "Pulse period [ms]",
+            "description": "Time from the start of one burst to the start of next burst",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "gasMix": {
+            "title": "Gas (mixture)",
+            "description": "Gas or gas mixture in which the plasma is ignited",
+            "type": "string"
+        },
+        "gasFlowRateValue": {
+            "title": "Gas flow rate [sccm]",
+            "description": "Flow rate of the gas (mixture) in which the plasma is ignited",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "precursortype": {
+            "title": "Precursor type",
+            "description": "Precursor type used",
+            "type": "array",
+            "enum": [
+                "solid",
+                "liquid",
+                "powder"
+            ],
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 1
+        },
+        "precursorname": {
+            "title": "Precursor name",
+            "description": "Chemical description of precursor",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 1
+        },
+        "chemical description": {
+            "title": "precursorflow",
+            "description": "Precursor flow",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "gasTemperatureValue": {
+            "title": "Gas temperature [K]",
+            "description": "Minimum gas temperature",
+            "type": "number"
+        },
+        "gasPressureValue": {
+            "title": "Gas pressure [Pa]",
+            "description": "Minimum gas pressure",
+            "type": "number"
+        },
+        "backgroundPressureValue": {
+            "title": "Background pressure [Pa]",
+            "description": "Pressure in chamber before gas filling",
+            "type": "number"
+        },
+        "pumpSpeedValue": {
+            "title": "Pump speed [l s^(-1)]",
+            "description": "pump speed",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "ElectrodeType": {
+            "title": "Electrode type",
+            "description": "Electrode configuration e.g plate-to-plate/coil",
+            "type": "string"
+        },
+        "ElectrodeMaterial": {
+            "title": "Material of electrodes",
+            "description": "Material",
+            "type": "string"
+        },
+        "ChamberVolume": {
+            "title": "Chamber volume [l]",
+            "description": "Volume of the plasma chamber",
+            "type": "number"
+        },
+        "DischargeType": {
+            "title": "Discharge type",
+            "description": "Used discharge e.g ICP; Magnetron; Helicon",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "sn",
+        "commercial",
+        "developedBy",
+        "describedBy",
+        "powerValue",
+        "powerSupply",
+        "gasMix",
+        "gasTemperatureValue",
+        "gasPressureValue",
+        "backgroundPressureValue",
+        "ElectrodeType",
+        "ElectrodeMaterial",
+        "ChamberVolume",
+        "DischargeType"
+    ]
+}

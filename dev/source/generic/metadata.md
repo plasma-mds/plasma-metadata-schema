@@ -5,3 +5,4 @@
 | 3 |plasma.source.specification  | Specification |  | technical specifications of the plasma source (waveform, frequency, pressure, temperature). E.g. AC, high frequency, low pressure, non-thermal                | string |1 | |
 | 4 |plasma.source.properties  | Properties |  | properties of the plasma source. E.g. details on power input, current/voltage, amplitude etc.  | string |1 | |
 | 5 |plasma.source.procedure  | Procedure |  | procedure to prepare the plasma source. E.g. temperature conditioning for each parameter set | string |1 | |
+

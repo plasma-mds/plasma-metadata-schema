@@ -5,4 +5,4 @@
 | 3 | Cluster | Cluster/Ion        |  | Cluster or ion sputtering | string | 1 |  | 
 | 4 | SputterEnergyValue | Sputter energy     |eV | Energy of sputter process  | number | 1 |  | 
 | 5 | SputterTimeValue | Sputter time      |s | Duration of the sputtering process  | number | 1 |  | 
-| 6 | SputterSpot | Spot size of sputtering    |µm | Spot size of the sputtering  | number | 1 |  | 
+| 6 | SputterSpot | Spot size of sputtering    |µm | Spot size of the sputtering  | number | 1 |  |

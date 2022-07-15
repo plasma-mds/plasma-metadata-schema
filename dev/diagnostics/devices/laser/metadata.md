@@ -1,13 +1,14 @@
 #### Laser
 
-| Field               | Unit | Description                                           | Required by                                                  |
-| ------------------- | ---- | ----------------------------------------------------- | ------------------------------------------------------------ |
-| type                | -    | Type of the laser, e.g. QCL, tunable diode, broadband | [LAS](../../spectroscopy/LAS/metadata.md)                    |
-| central-wavenlength | nm   | Central wavelength (CWL)                              | [CARS](../../spectroscopy/CARS/metadata.md), [LAS](../../spectroscopy/LAS/metadata.md) |
-| FWHM                | nm   | Full width at half maximum                            | [CARS](../../spectroscopy/CARS/metadata.md)                  |
-| pulse-duration      | ns   | Pulse duration                                        | [CARS](../../spectroscopy/CARS/metadata.md)                  |
-| pulse-energy        | mJ   | Pulse energy                                          | [CARS](../../spectroscopy/CARS/metadata.md)                  |
-| current             | mA   | Laser current                                         | [LAS](../../spectroscopy/LAS/metadata.md)                    |
-| temperature         | °C   | Laser temperature                                     | [LAS](../../spectroscopy/LAS/metadata.md)                    |
-| output-power        | mW   | Output power                                          | [LAS](../../spectroscopy/LAS/metadata.md)                    |
 
+
+| Id  	| Key  					| Title 					| Unit | Description 											| Type 	| Occ  | Allowed values |
+| ----	| ---- 					| ----- 					| ---- | -----------    										| ---- 	| ---- | -------------- 
+|1		| type					| type              		| -    | Type of the laser, e.g. QCL, tunable diode, broadband 	|string |1| |
+|2		| central-wavenlength	| central-wavenlength		| nm   | Central wavelength (CWL)                             	|number |1| |
+|3		| FWHM 					| FWHM               		| nm   | Full width at half maximum                            	|number |1| |
+|4		| pulse-duration		| pulse-duration      		| ns   | Pulse duration                                        	|number |1| |
+|5		| pulse-energy 			| pulse-energy        		| mJ   | Pulse energy                                          	|number |1| |
+|6		| current 				| current             		| mA   | Laser current                                         	|number |1|  |
+|7		| temperature			| temperature       		| °C   | Laser temperature                                     	|number |1|   |
+|8		| output-power			| output-power        		| mW   | Output power                                       	|number |1| |

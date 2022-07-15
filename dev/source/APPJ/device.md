@@ -1,4 +1,4 @@
-|Id		| Key                 | Title                     | Unit	| Description                                                                       | Type    | Occ | Allowed values |
+|Id	| Key                 | Title                     | Unit	| Description                                                                       | Type    | Occ | Allowed values |
 |----	| ------------------- | ------------------------- | ----	| --------------------------------------------------------------------------------- | ------- | -------- | ------------- |
 |	1	| name                | Name                      | 		| Name of the plasma source device                                                  | string  | 1     |               |
 |	2	| sn                  | Serial number             | 		| Serial number of the plasma source device                                         | string  | 1     |               |

@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "plasma.source.name": {
+            "title": "Source Name",
+            "description": "name and/or type of the plasma source. E.g. kINPen\\u00ae MED, COST jet, HF plasma jet",
+            "type": "string"
+        },
+        "plasma.source.application": {
+            "title": "Application",
+            "description": "application the plasma source is applied for. E.g. plasma medicine, surface treatment, antimicrobial reduction",
+            "type": "string"
+        },
+        "plasma.source.specification": {
+            "title": "Specification",
+            "description": "technical specifications of the plasma source (waveform, frequency, pressure, temperature). E.g. AC, high frequency, low pressure, non-thermal",
+            "type": "string"
+        },
+        "plasma.source.properties": {
+            "title": "Properties",
+            "description": "properties of the plasma source. E.g. details on power input, current/voltage, amplitude etc.",
+            "type": "string"
+        },
+        "plasma.source.procedure": {
+            "title": "Procedure",
+            "description": "procedure to prepare the plasma source. E.g. temperature conditioning for each parameter set",
+            "type": "string"
+        }
+    },
+    "required": [
+        "plasma.source.name",
+        "plasma.source.application",
+        "plasma.source.specification",
+        "plasma.source.properties",
+        "plasma.source.procedure"
+    ]
+}

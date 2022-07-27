@@ -1,0 +1,5 @@
+|Id  | Key  | Title                     | Unit| Description                    | Type | Occ | Allowed values |
+|---- | ---- | ------------------------- | ----| ------------------------------ | ---- | ----| -------------- |
+| 1 | plasma.diagnostics.name       | Diagnostic  |  |name of the applied diagnostics or modelling/simulation method. E.g. OES, LSD, LAAS, XPS, SEM, PIC-MCC, fluid-Poisson model |   string     |1 | |
+| 2 | plasma.diagnostics.properties | Properties |  | properties of the applied diagnostics which are not part of the resource metadata. E.g. laser diode at 395 nm and 50 mW  |   string     |1 | |
+| 3 | plasma.diagnostics.procedure  | Procedure |  | details of the applied diagnostic procedures which are not part of the resource metadata. E.g. voltage is measured between the contact tube of the welding torch and the workpiece|    string     |1 | |

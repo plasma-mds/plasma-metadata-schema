@@ -1,10 +1,3 @@
-| Field                    | Definition                                             | Example                                           |
-| ------------------------ | ------------------------------------------------------ | ------------------------------------------------- |
-|  |                                      |
-|  | |
-|     |                       |
-|   |                      |
-
 |Id  | Key  | Title                     | Unit| Description                    | Type | Occ | Allowed values |
 |---- | ---- | ------------------------- | ----| ------------------------------ | ---- | ----| -------------- |
 | 1 | plasma.resource.filetype      |  File type |  |file type of the resource data. E.g. csv, jpg, pdf |   string     |1 | |

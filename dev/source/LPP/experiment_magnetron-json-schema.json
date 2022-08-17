@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "ElectrodeSize": {
+            "title": "Electrode size [mm]",
+            "description": "size of electrode + asymmetry factor",
+            "type": "number"
+        },
+        "ElectrodeDistance": {
+            "title": "Electrode distance [mm]",
+            "description": "Distance between electrodes",
+            "type": "number"
+        },
+        "ElectrodeShape": {
+            "title": "Electrode shape",
+            "description": "Defining the electrode shape e.g. asymmetric, symmetric, round/square",
+            "type": "string"
+        },
+        "MagnetronTargetArea": {
+            "title": "Electrode/target area [mm^2]",
+            "description": "Target area",
+            "type": "number"
+        },
+        "MagnetronMagenticField": {
+            "title": "Magnetic field configuration",
+            "description": "Configuration of magnetic field",
+            "type": "string"
+        },
+        "MagnetronDrivingElectrode": {
+            "title": "identical with electrode",
+            "description": "Target electrode equal to driving electrode",
+            "type": "boolean"
+        },
+        "MagnetronTargetMaterial": {
+            "title": "target material",
+            "description": "Material description e.g. 99,99at% Al, Ti\\u2026// inserts",
+            "type": "string"
+        }
+    },
+    "required": [
+        "ElectrodeSize",
+        "ElectrodeDistance",
+        "ElectrodeShape",
+        "MagnetronTargetArea",
+        "MagnetronMagenticField",
+        "MagnetronDrivingElectrode",
+        "MagnetronTargetMaterial"
+    ]
+}

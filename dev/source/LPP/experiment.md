@@ -5,7 +5,7 @@
 |  3| commercial              | Commercial product       |  | Is the plasma source commercially available?                                         | string  | 1     |               |
 |  4| developedBy             | Developer                |  | Name of the institution / group where the plasma source has been developed           | string  | 1     |               |
 |  5| describedBy             | Documentation            |  | Publication or other report describing the plasma source                             | string  | 1     |               |
-|  6| powerValue              | Input power            | W |                                                                                      | number  | 1     |               |
+|  6| powerValue              | Input power            | W | Input power supplied to the device | number  | 1     |               |
 |  7| reflectedPower          | Reflected power        | % | Part of the input power which is reflected and not coupled to the electrode          | number  | 0-1    |               |
 |  8| powerSupply             | Power supply             |  | Type of the input power                                                              | string  | 1     |               |
 |  9| currentValue            | Current                | A | Applied current                                                                      | string  | 0-1    |               |

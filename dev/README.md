@@ -25,9 +25,9 @@ The html description list (*.tpl file) can be directly loaded into eLabFTW for u
 
 The table must always satisfy this format
 
-| Key | Title | Description | Type | Required | Default value |
-| ------------------- | ------------------------- | --------------------------------------------------------------------------------- | ------- | -------- | ------------- |
-|Keyword for the field. Must not be too long and contain white spaces| Title for the field | Description of the field | any type in {string, number, integer, boolean, array} | any value in {true, false} | Default value for this field, can be left empty|
+|Id|Key|Title|Unit|Description|Type|Occ|Allowed values|
+|-|-|-|-|-|-|-|-|
+|Id without specific meaning|Keyword for the field. Must not be too long and contain white spaces|Title for the field|Unit of the stored value|Description of the field|Any type in {string, number, integer, boolean}|Occurrence of the field|Allowed values for the field|
 
 ### Example Markdown table
 

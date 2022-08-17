@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "SampleType": {
+            "title": "Sample type",
+            "description": "Homogeneous; gas; amorphous; inorganic material; powder",
+            "type": "string"
+        },
+        "SampleID": {
+            "title": "Sample name",
+            "description": "Number or sample name",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 1
+        },
+        "FileName": {
+            "title": "File name",
+            "description": "File name of this measurement",
+            "type": "string"
+        },
+        "ReceivedCondition": {
+            "title": "As received condition",
+            "description": "Condition how the sample was received to the XPS chamber (expsoure time)",
+            "type": "string"
+        },
+        "History": {
+            "title": "History of sample",
+            "description": "Sample history of previous measurements",
+            "type": "string"
+        },
+        "SafetyInfo": {
+            "title": "Safety information",
+            "description": "Official sample information",
+            "type": "string"
+        },
+        "SampleMounting": {
+            "title": "Mounting of the sample",
+            "description": "Mounting of the sample",
+            "type": "string"
+        },
+        "TemperatureSample": {
+            "title": "Sample temperature [K]",
+            "description": "Temperature of the sample during measurement",
+            "type": "number"
+        },
+        "NeutralizeType": {
+            "title": "Neutralization",
+            "description": "Neutralization information during measurement",
+            "type": "string"
+        },
+        "NeutralizeEnergy": {
+            "title": "Energy of neutralization [W]",
+            "description": "Energy of neutralization",
+            "type": "number"
+        },
+        "NeutralizeCurrent": {
+            "title": "Current neutralize mA",
+            "description": "Neutralization current",
+            "type": "string"
+        },
+        "RepeatNumber": {
+            "title": "Repeats of measurement",
+            "description": "Number of repeats of the whole measurement setting",
+            "type": "number"
+        }
+    },
+    "required": [
+        "SampleType",
+        "FileName",
+        "ReceivedCondition",
+        "History",
+        "SafetyInfo",
+        "SampleMounting",
+        "TemperatureSample",
+        "NeutralizeType",
+        "NeutralizeEnergy",
+        "NeutralizeCurrent",
+        "RepeatNumber"
+    ]
+}

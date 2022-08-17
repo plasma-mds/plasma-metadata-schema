@@ -1,0 +1,174 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "name": {
+            "title": "Oscilloscope",
+            "description": "Brand and type/name of the device",
+            "type": "string"
+        },
+        "triggerChannel": {
+            "title": "Trigger channel",
+            "description": "Channel used for triggering",
+            "type": "string"
+        },
+        "triggerMode": {
+            "title": "Trigger mode",
+            "description": "Mode used for triggering (e.g. edge, window)",
+            "type": "string"
+        },
+        "triggerLevel": {
+            "title": "Trigger level [V]",
+            "description": "Voltage level used for triggering",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "triggerOptions": {
+            "title": "Trigger options",
+            "description": "Options of the trigger mode",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 1
+        },
+        "samplingMode": {
+            "title": "Sampling mode",
+            "description": "Mode for data sampling (sample, peakdk, high res, RMS)",
+            "type": "string"
+        },
+        "sampleRate": {
+            "title": "Sample rate [GS/s]",
+            "description": "Sample rate",
+            "type": "number"
+        },
+        "recordLength": {
+            "title": "Record length",
+            "description": "Number of data points",
+            "type": "array",
+            "items": {
+                "type": "number"
+            },
+            "maxItems": 1
+        },
+        "channel": {
+            "title": "Channel",
+            "description": "The channel described below",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "aquisitionMode",
+                    "adaptor",
+                    "inputCoupling",
+                    "bandwidth",
+                    "verticalRange",
+                    "delay",
+                    "offset",
+                    "deskew",
+                    "externalProbes"
+                ],
+                "properties": {
+                    "aquisitionMode": {
+                        "title": "Acquisition mode",
+                        "description": "Mode for data acquisition (e.g. normal, average, envelope)",
+                        "type": "string"
+                    },
+                    "adaptor": {
+                        "title": "Adaptor",
+                        "description": "Adaptor used for connector type change or attenuation (e.g BNC to SMA, 20 dB attenuation)",
+                        "type": "string"
+                    },
+                    "adaptorAttenuation": {
+                        "title": "Adaptor attenuation [dB]",
+                        "description": "Attenuation of the adaptor (only for attenuators)",
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "adaptorTermination": {
+                        "title": "Adaptor termination [Ohm]",
+                        "description": "Termination of the adaptor",
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "adaptorBandwidth": {
+                        "title": "Adaptor bandwidth [Hz]",
+                        "description": "Bandwidth of the adaptor",
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "inputCoupling": {
+                        "title": "Input coupling",
+                        "description": "Options are AC, DC, GND",
+                        "type": "string"
+                    },
+                    "bandwidth": {
+                        "title": "Bandwidth [Hz]",
+                        "description": "Bandwidth (depends on internal channel termination)",
+                        "type": "number"
+                    },
+                    "internalTermination": {
+                        "title": "Internal termination [Ohm]",
+                        "description": "Internal termination for impedance (miss-)matching",
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "verticalRange": {
+                        "title": "Vertical range [V]",
+                        "description": "Volt per scale section (e.g. x10 equals the total height)",
+                        "type": "number"
+                    },
+                    "delay": {
+                        "title": "Delay [s]",
+                        "description": "Delay to trigger point",
+                        "type": "number"
+                    },
+                    "offset": {
+                        "title": "Offset [V]",
+                        "description": "Offset voltage",
+                        "type": "number"
+                    },
+                    "deskew": {
+                        "title": "Deskew [s]",
+                        "description": "Delay between channels for signal runtime compensation (e.g. cable lengths)",
+                        "type": "number"
+                    },
+                    "externalProbes": {
+                        "title": "External probes",
+                        "description": "Connected probes used for measurements",
+                        "type": "string"
+                    }
+                }
+            },
+            "minItems": 1
+        },
+        "timeWindow": {
+            "title": "Time window [s]",
+            "description": "Time window",
+            "type": "number"
+        }
+    },
+    "required": [
+        "name",
+        "triggerChannel",
+        "triggerMode",
+        "samplingMode",
+        "sampleRate",
+        "channel",
+        "timeWindow"
+    ]
+}

@@ -1,4 +1,4 @@
-|Id  |  Key                  | Title                 |Unit | Description                                               | Type    | Required | Allowed values |
+|Id  |  Key                  | Title                 |Unit | Description                                               | Type    | Occ | Allowed values |
 |---- | -------------------   | ----------------------| ---- | ----------------------------------------------------------| ------- | -------- | ------------- |
 | 1 | AnodeVoltageValue     | Anode voltage   |   | Voltage at the anode e.g. 15 keV       | number | 1 ||
 | 2 | BeamDiameterValue  | XPS beam diameter  | µm | Beam diameter of the XPS measurement  | number | 1 | |

@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "plasma.medium.name": {
+            "title": "Plasma medium",
+            "description": "medium name the plasma source is operated in. E.g. Ar, CO2 , H2O, air",
+            "type": "string"
+        },
+        "plasma.medium.properties": {
+            "title": "Properties",
+            "description": "properties of the medium the plasma source is operated in. E.g. gas flow rate: 100 sccm, carrier gas: Ar, precursor: HMDSO, gas mixture: Ar with 10 ppm HMDSO",
+            "type": "string"
+        },
+        "plasma.medium.procedure": {
+            "title": "Procedure",
+            "description": "procedure to prepare the medium. E.g. gas flow has to be established for at least 30 s before plasma ignition",
+            "type": "string"
+        }
+    },
+    "required": [
+        "plasma.medium.name",
+        "plasma.medium.properties",
+        "plasma.medium.procedure"
+    ]
+}

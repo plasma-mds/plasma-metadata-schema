@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "Sputter": {
+            "title": "Sputtering of sample",
+            "description": "Did a sputtering happen?",
+            "type": "boolean"
+        },
+        "SputterIonName": {
+            "title": "Gas name",
+            "description": "Name of the gas used for sputtering e.g. Ar, He",
+            "type": "string"
+        },
+        "Cluster": {
+            "title": "Cluster/Ion",
+            "description": "Cluster or ion sputtering",
+            "type": "string"
+        },
+        "SputterEnergyValue": {
+            "title": "Sputter energy [eV]",
+            "description": "Energy of sputter process",
+            "type": "number"
+        },
+        "SputterTimeValue": {
+            "title": "Sputter time [s]",
+            "description": "Duration of the sputtering process",
+            "type": "number"
+        },
+        "SputterSpot": {
+            "title": "Spot size of sputtering [\\u00b5m]",
+            "description": "Spot size of the sputtering",
+            "type": "number"
+        }
+    },
+    "required": [
+        "Sputter",
+        "SputterIonName",
+        "Cluster",
+        "SputterEnergyValue",
+        "SputterTimeValue",
+        "SputterSpot"
+    ]
+}

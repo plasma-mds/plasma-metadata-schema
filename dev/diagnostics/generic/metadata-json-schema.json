@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "plasma.diagnostics.name": {
+            "title": "Diagnostic",
+            "description": "name of the applied diagnostics or modelling/simulation method. E.g. OES, LSD, LAAS, XPS, SEM, PIC-MCC, fluid-Poisson model",
+            "type": "string"
+        },
+        "plasma.diagnostics.properties": {
+            "title": "Properties",
+            "description": "properties of the applied diagnostics which are not part of the resource metadata. E.g. laser diode at 395 nm and 50 mW",
+            "type": "string"
+        },
+        "plasma.diagnostics.procedure": {
+            "title": "Procedure",
+            "description": "details of the applied diagnostic procedures which are not part of the resource metadata. E.g. voltage is measured between the contact tube of the welding torch and the workpiece",
+            "type": "string"
+        }
+    },
+    "required": [
+        "plasma.diagnostics.name",
+        "plasma.diagnostics.properties",
+        "plasma.diagnostics.procedure"
+    ]
+}

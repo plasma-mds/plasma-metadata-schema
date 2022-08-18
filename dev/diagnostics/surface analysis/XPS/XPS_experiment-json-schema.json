@@ -146,7 +146,7 @@
                 "properties": {
                     "Sample": {
                         "title": "Sample",
-                        "description": "Name of the measured psamples",
+                        "description": "Name of the measured sample (reffering to ID/name of sample from the top)",
                         "type": "array",
                         "items": {
                             "type": "string"

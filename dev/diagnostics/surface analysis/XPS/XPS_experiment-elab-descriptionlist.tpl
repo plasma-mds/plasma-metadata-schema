@@ -68,7 +68,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">1</td>
-<td style="text-align: center;">Name of the measured psamples</td>
+<td style="text-align: center;">Name of the measured sample (reffering to ID/name of sample from the top)</td>
 <td style="text-align: center;">Name of the measured peak including the orbital (e.g. O1s, SURV)</td>
 <td style="text-align: center;">Value of pass energy for FAT</td>
 <td style="text-align: center;">Retardation ratio (eV)</td>

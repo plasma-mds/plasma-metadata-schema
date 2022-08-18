@@ -20,7 +20,7 @@
 | 6.11 | NeutralizeCurrent | Current neutralize mA|  | Neutralization current | string | 1 |  |
 | 6.12 | RepeatNumber | Repeats of measurement |  | Number of repeats of the whole measurement setting | number | 0 |  |
 | 7 | Peak | Peak description| | Description of the peaks | | 1-n |  |
-| 7.1 | Sample | Sample |  | Name of the measured psamples |  | 1-n |  |
+| 7.1 | Sample | Sample |  | Name of the measured psamples | string | 1-n |  |
 | 7.2 | PeakName | XPS peak name |  | Name of the measured peak including the orbital (e.g. O1s, SURV) | string | 1 |  |
 | 7.3 | PassEnergy | ValuePass energy |  eV | Value of pass energy for FAT | number | 1 |  |
 | 7.4 | RetardationValue | Retardation ratio |  | Retardation ratio (eV) | number | 1 |  |

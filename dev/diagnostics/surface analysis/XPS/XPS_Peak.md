@@ -1,6 +1,6 @@
 |Id  | Key                 | Title                     | Unit | Description | Type    | Occ | Allowed values |
 |---- | ------------------- | ------------------------- | ---- | ------------| ------- | -------- | ------------- |
-| 1 | PeakName | XPS peak name |  | Name of the measured peak including the orbital (e.g. O1s, SURV) | string | 1 |  | 
+| 1 | PeakName | XPS peak name |  | Name of the measured peak including the orbital (e.g. O1s, SURV) | string | 1-n |  | 
 | 2 | PassEnergy | ValuePass energy |  eV | Value of pass energy for FAT | number | 1 |  | 
 | 3 | RetardationValue | Retardation ratio |  | Retardation ratio (eV) | number | 1 |  | 
 | 4 | LowerBE | XPS lower binding energy | eV | Lower Binding energy of measurement  | number | 1 |  | 

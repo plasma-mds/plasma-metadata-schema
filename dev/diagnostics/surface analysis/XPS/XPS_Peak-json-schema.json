@@ -8,7 +8,11 @@
         "PeakName": {
             "title": "XPS peak name",
             "description": "Name of the measured peak including the orbital (e.g. O1s, SURV)",
-            "type": "string"
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
         },
         "PassEnergy": {
             "title": "ValuePass energy [eV]",

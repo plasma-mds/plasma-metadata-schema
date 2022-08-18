@@ -133,6 +133,7 @@
             "items": {
                 "type": "object",
                 "required": [
+                    "Sample",
                     "PeakName",
                     "PassEnergy",
                     "RetardationValue",
@@ -143,6 +144,14 @@
                     "ScanNumber"
                 ],
                 "properties": {
+                    "Sample": {
+                        "title": "Sample",
+                        "description": "Name of the measured psamples",
+                        "type": "array",
+                        "items": {
+                            "type": ""
+                        }
+                    },
                     "PeakName": {
                         "title": "XPS peak name",
                         "description": "Name of the measured peak including the orbital (e.g. O1s, SURV)",

@@ -56,6 +56,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>No.</strong></td>
+<td style="text-align: center;"><strong>Sample</strong></td>
 <td style="text-align: center;"><strong>XPS peak name</strong></td>
 <td style="text-align: center;"><strong>ValuePass energy [eV]</strong></td>
 <td style="text-align: center;"><strong>Retardation ratio</strong></td>
@@ -67,6 +68,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">1</td>
+<td style="text-align: center;">Name of the measured psamples</td>
 <td style="text-align: center;">Name of the measured peak including the orbital (e.g. O1s, SURV)</td>
 <td style="text-align: center;">Value of pass energy for FAT</td>
 <td style="text-align: center;">Retardation ratio (eV)</td>

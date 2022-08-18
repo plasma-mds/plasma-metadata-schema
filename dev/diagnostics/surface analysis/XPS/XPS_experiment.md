@@ -20,14 +20,15 @@
 | 6.11 | NeutralizeCurrent | Current neutralize mA|  | Neutralization current | string | 1 |  |
 | 6.12 | RepeatNumber | Repeats of measurement |  | Number of repeats of the whole measurement setting | number | 0 |  |
 | 7 | Peak | Peak description| | Description of the peaks | | 1-n |  |
-| 7.1 | PeakName | XPS peak name |  | Name of the measured peak including the orbital (e.g. O1s, SURV) | string | 1 |  |
-| 7.2 | PassEnergy | ValuePass energy |  eV | Value of pass energy for FAT | number | 1 |  |
-| 7.3 | RetardationValue | Retardation ratio |  | Retardation ratio (eV) | number | 1 |  |
-| 7.4 | LowerBE | XPS lower binding energy | eV | Lower Binding energy of measurement  | number | 1 |  |
-| 7.5 | UpperBE | XPS upper binding energy | eV | Upper Binding energy of measurement  | number | 1 |  |
-| 7.6 | AcquisitionTime | Acquisition time |  | Total signal accumulation time | number | 1 |  |
-| 7.7 | StepWidth | XPS step width  | eV | Step width of detailed XPS measurement  | number | 1 |  |
-| 7.8 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
+| 7.1 | Sample | Sample |  | Name of the measured psamples |  | 1-n |  |
+| 7.2 | PeakName | XPS peak name |  | Name of the measured peak including the orbital (e.g. O1s, SURV) | string | 1 |  |
+| 7.3 | PassEnergy | ValuePass energy |  eV | Value of pass energy for FAT | number | 1 |  |
+| 7.4 | RetardationValue | Retardation ratio |  | Retardation ratio (eV) | number | 1 |  |
+| 7.5 | LowerBE | XPS lower binding energy | eV | Lower Binding energy of measurement  | number | 1 |  |
+| 7.6 | UpperBE | XPS upper binding energy | eV | Upper Binding energy of measurement  | number | 1 |  |
+| 7.7 | AcquisitionTime | Acquisition time |  | Total signal accumulation time | number | 1 |  |
+| 7.8 | StepWidth | XPS step width  | eV | Step width of detailed XPS measurement  | number | 1 |  |
+| 7.9 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
 | 8 | Sputtering | Sputtering description| | Description of the sputtering | | 0-n |  |
 | 8.1 | SputterIonName | Gas name       |   |Name of the gas used for sputtering e.g. Ar, He | string | 1 |  |
 | 8.2 | Cluster | Cluster/Ion        |  | Cluster or ion sputtering | string | 1 |  |

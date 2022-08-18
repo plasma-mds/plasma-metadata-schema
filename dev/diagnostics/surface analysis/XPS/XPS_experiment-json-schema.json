@@ -149,7 +149,7 @@
                         "description": "Name of the measured psamples",
                         "type": "array",
                         "items": {
-                            "type": ""
+                            "type": "string"
                         }
                     },
                     "PeakName": {

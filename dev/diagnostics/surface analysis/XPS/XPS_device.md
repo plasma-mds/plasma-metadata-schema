@@ -11,7 +11,7 @@
 | 9 | IncidentAngle          | Incident Angle         | °  | Angle to surface normal                               | number  | 1     |               |
 | 10 | PhotonType             | X-ray excitation source |  | X-ray excitation source and with description of the line e.g. Al K_alpha monochromatic/ Al K_alphanon-monochromatic/Mg K_alpha  | string  | 1     | |
 | 11 | ExcitationValue        | X-Ray excitation energy e.g 1486.7 |eV | X-Ray                                                 | number  | 1     |         |
-| 12 | Emission Current|Emission Current|mA| Emission current of the source|number|1||
+| 12 | EmissionCurrent|Emission Current|mA| Emission current of the source|number|1||
 |13|PhotonFlux|Photon flux||Photon flux|string||
 | 14 | Monochromatic          | Monochromatized        |   | monochromatization (yes/no)                               | boolean | 1     |            |
 |15 | Resolution             | Resolution of the device |  | Resolution for device                                   | number  | 1     |               |

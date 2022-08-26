@@ -30,8 +30,13 @@
 | 7.8 | StepWidth | XPS step width  | eV | Step width of detailed XPS measurement  | number | 1 |  |
 | 7.9 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
 | 8 | Sputtering | Sputtering description| | Description of the sputtering | | 0-n |  |
-| 8.1 | SputterIonName | Gas name       |   |Name of the gas used for sputtering e.g. Ar, He | string | 1 |  |
-| 8.2 | Cluster | Cluster/Ion        |  | Cluster or ion sputtering | string | 1 |  |
-| 8.3 | SputterEnergyValue | Sputter energy     |eV | Energy of sputter process  | number | 1 |  |
-| 8.4 | SputterTimeValue | Sputter time      |s | Duration of the sputtering process  | number | 1 |  |
-| 8.5 | SputterSpot | Spot size of sputtering    |µm | Spot size of the sputtering  |number|1||
+| 8.2 | SputterIonName | Gas name       |   |Name of the gas used for sputtering e.g. Ar, He | string | 1 |  |
+| 8.3 | Cluster | Cluster/Ion        |  | Cluster or ion sputtering | string | 1 |  |
+| 8.4 | SputterEnergyValue | Sputter energy     |eV | Energy of sputter process  | number | 1 |  |
+| 8.5 | SputterTimeValue | Sputter time      |s | Duration of the sputtering process  | number | 1 |  |
+| 8.6 | SputterSpot | Spot size of sputtering    |µm | Spot size of the sputtering  |number|1||
+|9 | Handling | Sample handling| | Different types of sample handling | | 0-n |  |
+|9.1| AngleRes| Angle resolved|°|Incident angle of sample holder to normal||0||
+|9.3|PressureVar|Pressure variation||Pressure variation (indicate start and end pressure||0||
+|9.4|TempVar|Temperature variation|| Temperature variation (indicate start and end temperature)||0||
+|9.5|otherTreatment|Other Treatment during XPS||Other treatment during the PS measurement||0||

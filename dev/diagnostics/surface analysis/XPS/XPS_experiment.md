@@ -31,6 +31,7 @@
 | 7.9 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
 | 7.10 | SampleComment | Comment |  | Indicate with any comment specific information about the sample | string | 1 |  |
 | 8 | Sputtering | Sputtering description| | Description of the sputtering | | 0-n |  |
+|8.1|SampleSputt|Sample for sputtering||Indicate which sample is sputtered||1||
 | 8.2 | SputterIonName | Gas name       |   |Name of the gas used for sputtering e.g. Ar, He | string | 1 |  |
 | 8.3 | Cluster | Cluster/Ion        |  | Cluster or ion sputtering | string | 1 |  |
 | 8.4 | SputterEnergyValue | Sputter energy     |eV | Energy of sputter process  | number | 1 |  |

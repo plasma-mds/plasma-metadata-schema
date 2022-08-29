@@ -6,7 +6,7 @@
 |1.3|TransFunc|Transmission function||Transmission function used (name/storage)|string|1||
 |1.4|ReferencePaper|Reference paper||Information about the reference paper|string|0||
 |2|PeakName|Peak name||Name of the analysed XPS peak|string|1-n||
-|2.1|Background|Background||Background fit|string||
+|2.1|Background|Background||Background fit|string|1||
 |2.2|Fit type|Fit type||Fit type|boolean|1|singlet; doublet||
 |2.3|LineShape|LineShape||Line shape|string|1||
 |2.4|Asymmetry|Asymmetry or comments||Asymmetry in peak? or other comments|string|0||

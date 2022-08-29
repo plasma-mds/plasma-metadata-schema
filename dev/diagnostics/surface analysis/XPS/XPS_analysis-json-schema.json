@@ -1,0 +1,115 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "General": {
+            "title": "General information",
+            "description": "General information for processing the fit",
+            "type": "string"
+        },
+        "Normalization": {
+            "title": "Normalization",
+            "description": "Normalization (reference for fit)",
+            "type": "string"
+        },
+        "IntensityFactor": {
+            "title": "Intensity factor",
+            "description": "Intensity factor (name/storage)",
+            "type": "string"
+        },
+        "TransFunc": {
+            "title": "Transmission function",
+            "description": "Transmission function used (name/storage)",
+            "type": "string"
+        },
+        "ReferencePaper": {
+            "title": "Reference paper",
+            "description": "Information about the reference paper",
+            "type": "string"
+        },
+        "PeakName": {
+            "title": "Peak name",
+            "description": "Name of the analysed XPS peak",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "Background": {
+            "title": "Background",
+            "description": "Background fit",
+            "type": "string"
+        },
+        "Fit type": {
+            "title": "Fit type",
+            "description": "Fit type",
+            "type": "boolean"
+        },
+        "LineShape": {
+            "title": "LineShape",
+            "description": "Line shape",
+            "type": "string"
+        },
+        "Asymmetry": {
+            "title": "Asymmetry or comments",
+            "description": "Asymmetry in peak? or other comments",
+            "type": "string"
+        },
+        "Residual": {
+            "title": "Residual of peak fit",
+            "description": "Residual of peak fit",
+            "type": "string"
+        },
+        "Component": {
+            "title": "Analysed component",
+            "description": "Analysed component",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1
+        },
+        "ChemicalAssign": {
+            "title": "Chemical aissigment",
+            "description": "Chemical assignement of component",
+            "type": "string"
+        },
+        "Position": {
+            "title": "Position component [eV]",
+            "description": "Absolut or relative position for component",
+            "type": "number"
+        },
+        "FWHM": {
+            "title": "FWHM [eV]",
+            "description": "FWHM",
+            "type": "number"
+        },
+        "Profile ratio": {
+            "title": "Profile ratio",
+            "description": "Lorentz/Gau\\u00df ratio",
+            "type": "string"
+        },
+        "Composition": {
+            "title": "Stoichiometric composition",
+            "description": "Stoichiometric composition",
+            "type": "string"
+        }
+    },
+    "required": [
+        "General",
+        "Normalization",
+        "IntensityFactor",
+        "TransFunc",
+        "PeakName",
+        "Background",
+        "Fit type",
+        "LineShape",
+        "Component",
+        "Position",
+        "FWHM"
+    ]
+}

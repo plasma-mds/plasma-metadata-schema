@@ -1,0 +1,146 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "name": {
+            "title": "Name",
+            "description": "Name of the XPS device",
+            "type": "string"
+        },
+        "sn": {
+            "title": "Serial number",
+            "description": "Serial number of the device",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 1
+        },
+        "developedBy": {
+            "title": "Developer",
+            "description": "Name of the company",
+            "type": "string"
+        },
+        "AngleSourceValue": {
+            "title": "Angle between source and analyser [\\u00b0]",
+            "description": "Angle between source and analyser",
+            "type": "number"
+        },
+        "Aperture": {
+            "title": "Aperture of the device",
+            "description": "Aperture of the device",
+            "type": "string"
+        },
+        "ReferenceScale": {
+            "title": "Reference scale",
+            "description": "By giving position and FWHM of a ref material at a reference PE",
+            "type": "string"
+        },
+        "Detector": {
+            "title": "Detector type",
+            "description": "Type and name of the detector",
+            "type": "string"
+        },
+        "MaintenanceDate": {
+            "title": "Last maintenance date",
+            "description": "The date date of maintenance",
+            "type": "string"
+        },
+        "IncidentAngle": {
+            "title": "Incident Angle [\\u00b0]",
+            "description": "Angle to surface normal",
+            "type": "number"
+        },
+        "PhotonType": {
+            "title": "X-ray excitation source",
+            "description": "X-ray excitation source and with description of the line e.g. Al K_alpha monochromatic/ Al K_alphanon-monochromatic/Mg K_alpha",
+            "type": "string"
+        },
+        "ExcitationValue": {
+            "title": "X-Ray excitation energy e.g 1486.7 [eV]",
+            "description": "X-Ray",
+            "type": "number"
+        },
+        "EmissionCurrent": {
+            "title": "Emission Current [mA]",
+            "description": "Emission current of the source",
+            "type": "number"
+        },
+        "PhotonFlux": {
+            "title": "Photon flux",
+            "description": "Photon flux",
+            "type": "string"
+        },
+        "Monochromatic": {
+            "title": "Monochromatized",
+            "description": "monochromatization (yes/no)",
+            "type": "boolean"
+        },
+        "Resolution": {
+            "title": "Resolution of the device",
+            "description": "Resolution for device",
+            "type": "number"
+        },
+        "AngleSputter": {
+            "title": "Angle Sputtering [\\u00b0]",
+            "description": "Angle between sputter beam and surface normal",
+            "type": "number"
+        },
+        "DwellTimeValue": {
+            "title": "Dwell time [s]",
+            "description": "dwell time",
+            "type": "number"
+        },
+        "TakeOff": {
+            "title": "Take off angle [\\u00b0]",
+            "description": "with respect to surface normal",
+            "type": "number"
+        },
+        "AnalyserMode": {
+            "title": "Analyser mode",
+            "description": "Fixed analyser transmission/ Fixed pass energy (FAT) or constant retardation ratio (CRR)",
+            "type": "string"
+        },
+        "DeviceEquipment": {
+            "title": "Device equipment",
+            "description": "Device equipment (further sources)",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "maxItems": 1
+        },
+        "CoolHeat": {
+            "title": "Cooling or heating",
+            "description": "Is a cooling or heating system installed",
+            "type": "array",
+            "items": {
+                "type": "boolean"
+            },
+            "maxItems": 1
+        }
+    },
+    "required": [
+        "name",
+        "developedBy",
+        "AngleSourceValue",
+        "Aperture",
+        "ReferenceScale",
+        "Detector",
+        "MaintenanceDate",
+        "IncidentAngle",
+        "PhotonType",
+        "ExcitationValue",
+        "EmissionCurrent",
+        "PhotonFlux",
+        "Monochromatic",
+        "Resolution",
+        "AngleSputter",
+        "DwellTimeValue",
+        "TakeOff",
+        "AnalyserMode"
+    ]
+}

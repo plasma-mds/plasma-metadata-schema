@@ -255,7 +255,12 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [],
+                "required": [
+                    "AngleRes",
+                    "PressureVar",
+                    "TempVar",
+                    "otherTreatment"
+                ],
                 "properties": {
                     "AngleRes": {
                         "title": "Angle resolved [\\u00b0]",

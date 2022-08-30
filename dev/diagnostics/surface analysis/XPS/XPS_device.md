@@ -20,4 +20,4 @@
 | 18 | TakeOff                | Take off angle         |  ° | with respect to surface normal                         | number  | 1     |               |
 | 19 | AnalyserMode           | Analyser mode          |   | Fixed analyser transmission/ Fixed pass energy (FAT) or constant retardation ratio (CRR) |string |1   |          |
 | 20 | DeviceEquipment        | Device equipment       |   | Device equipment (further sources)                        | string  | 0-1    |               |
-| 21 | CoolHeat               | Cooling or heating     |   | Is a cooling or heating system installed                  | boolean | 0-1    |               |
+| 21 | CoolHeat               | Cooling or heating     |   | Is a cooling or heating system installed                  | string | 0-1    |               |

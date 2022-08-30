@@ -264,19 +264,23 @@
                 "properties": {
                     "AngleRes": {
                         "title": "Angle resolved [\\u00b0]",
-                        "description": "Incident angle of sample holder to normal"
+                        "description": "Incident angle of sample holder to normal",
+                        "type": "string"
                     },
                     "PressureVar": {
                         "title": "Pressure variation",
-                        "description": "Pressure variation (indicate start and end pressure)"
+                        "description": "Pressure variation (indicate start and end pressure)",
+                        "type": "string"
                     },
                     "TempVar": {
                         "title": "Temperature variation",
-                        "description": "Temperature variation (indicate start and end temperature)"
+                        "description": "Temperature variation (indicate start and end temperature)",
+                        "type": "string"
                     },
                     "otherTreatment": {
                         "title": "Other Treatment during XPS",
-                        "description": "Other treatment during the PS measurement"
+                        "description": "Other treatment during the PS measurement",
+                        "type": "string"
                     }
                 }
             }

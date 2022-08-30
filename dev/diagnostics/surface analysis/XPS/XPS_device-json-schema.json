@@ -118,7 +118,7 @@
             "description": "Is a cooling or heating system installed",
             "type": "array",
             "items": {
-                "type": "boolean"
+                "type": "string"
             },
             "maxItems": 1
         }

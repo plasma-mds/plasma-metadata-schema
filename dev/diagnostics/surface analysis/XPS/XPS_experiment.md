@@ -38,7 +38,7 @@
 | 8.5 | SputterTimeValue | Sputter time      |s | Duration of the sputtering process  | number | 1 |  |
 | 8.6 | SputterSpot | Spot size of sputtering    |µm | Spot size of the sputtering  |number|1||
 |9 | Handling | Sample handling| | Different types of sample handling | | 0-n |  |
-|9.1| AngleRes| Angle resolved|°|Incident angle of sample holder to normal||0||
-|9.3|PressureVar|Pressure variation||Pressure variation (indicate start and end pressure)||0||
-|9.4|TempVar|Temperature variation|| Temperature variation (indicate start and end temperature)||0||
-|9.5|otherTreatment|Other Treatment during XPS||Other treatment during the PS measurement||0||
+|9.1| AngleRes| Angle resolved|°|Incident angle of sample holder to normal||1||
+|9.3|PressureVar|Pressure variation||Pressure variation (indicate start and end pressure)||1||
+|9.4|TempVar|Temperature variation|| Temperature variation (indicate start and end temperature)||1||
+|9.5|otherTreatment|Other Treatment during XPS||Other treatment during the PS measurement||1||

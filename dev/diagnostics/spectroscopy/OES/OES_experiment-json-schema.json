@@ -5,23 +5,135 @@
     "description": "some schema description",
     "type": "object",
     "properties": {
-        "System": {
-            "title": "System",
-            "description": "General information about the system/device",
-            "type": "object",
-            "required": [
-                "Name"
-            ],
-            "properties": {
-                "Name": {
-                    "title": "Name",
-                    "description": "Short name",
-                    "type": "string"
+        "Num": {
+            "title": "Shot number",
+            "description": "Consecutive number/labels for the measurements, e.g. for reference to data files",
+            "type": "string"
+        },
+        "Notes": {
+            "title": "Notes",
+            "description": "Additional notes on the experiment, e.g. used filters (high pass filter, higher order suppressing filter, ...)",
+            "type": "string"
+        },
+        "EntranceSlitWidth": {
+            "title": "Entrance slit width [\\u00b5m]",
+            "description": "Entrance slit width. Usually only relevant for non-compact spectrometers, because of flexible slit width (see fact sheet).",
+            "type": "number"
+        },
+        "Gname": {
+            "title": "Grating name",
+            "description": "Name of the grating used. Not relevant for compact spectrometers.",
+            "type": "string"
+        },
+        "GMP": {
+            "title": "Grating middle position [nm]",
+            "description": "Wavelength in the middle of the detector array the grating is adjusted to (center wavelength)",
+            "type": "number"
+        },
+        "Dtexp": {
+            "title": "Exposure time [s]",
+            "description": "Exposure time for the detector",
+            "type": "number"
+        },
+        "Dgain": {
+            "title": "Detector gain",
+            "description": "Gain of the detector, e.g. relevant for ICCD",
+            "type": "number"
+        },
+        "OName": {
+            "title": "Oscilloscope name",
+            "description": "Name of the oscilloscope",
+            "type": "string"
+        },
+        "OTimeResolution": {
+            "title": "Resolution [s]",
+            "description": "Div time resolution of the oscilloscope",
+            "type": "number"
+        },
+        "OChannel": {
+            "title": "Channel information",
+            "description": "Information specific for each channel of the oscilloscope",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "OChName",
+                    "OChVerticalUnit",
+                    "OChResolutionVertical"
+                ],
+                "properties": {
+                    "OChName": {
+                        "title": "Channel name",
+                        "description": "Name of the channel, e.g. CH1",
+                        "type": "string"
+                    },
+                    "OChAlias": {
+                        "title": "Channel alias",
+                        "description": "Alias/Description of channel, e.g. current",
+                        "type": "string"
+                    },
+                    "OChVerticalUnit": {
+                        "title": "Vertical unit",
+                        "description": "Unit of the measured signal of the channel, e.g. Ampere",
+                        "type": "string"
+                    },
+                    "OChResolutionVertical": {
+                        "title": "Vertical resolution [V/div]",
+                        "description": "Vertical div resolution of the channel (volts/div)",
+                        "type": "number"
+                    }
+                }
+            },
+            "minItems": 1
+        },
+        "Delays": {
+            "title": "Delay settings",
+            "description": "Specification of delay settings",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "DReferenceTimeName",
+                    "DReferenceTimeValue",
+                    "DName",
+                    "DValue"
+                ],
+                "properties": {
+                    "DReferenceTimeName": {
+                        "title": "Reference time name",
+                        "description": "Name of the reference time. Each delay refers to some time, which has to be specified by name and value",
+                        "type": "string"
+                    },
+                    "DReferenceTimeValue": {
+                        "title": "Reference time value [s]",
+                        "description": "Value of the reference time, might be 0 or some other value",
+                        "type": "number"
+                    },
+                    "DName": {
+                        "title": "Delay name",
+                        "description": "Name of the delay and it value relative to reference time",
+                        "type": "string"
+                    },
+                    "DValue": {
+                        "title": "Delay value [s]",
+                        "description": "Value of the delay with respect to reference time",
+                        "type": "number"
+                    },
+                    "DComment": {
+                        "title": "Delay comment",
+                        "description": "Comment on the delay, e.g. name of the event, name of a triggered device",
+                        "type": "string"
+                    }
                 }
             }
         }
     },
     "required": [
-        "System"
+        "Num",
+        "GMP",
+        "Dtexp",
+        "OName",
+        "OTimeResolution",
+        "OChannel"
     ]
 }

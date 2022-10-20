@@ -81,7 +81,7 @@
                     },
                     "SExitSlitWidth": {
                         "title": "Exit slit width [\\u00b5m]",
-                        "description": "Width of the exit slit\\tnumber. Usually only relevant for single channel detector systems, like systems with PMT. Not relevant for compact spectrometers or OMA (optical multi-channel analyzers).",
+                        "description": "Width of the exit slit number. Usually only relevant for single channel detector systems, like systems with PMT. Not relevant for compact spectrometers or OMA (optical multi-channel analyzers).",
                         "type": "number"
                     },
                     "SWLresolution": {
@@ -155,38 +155,41 @@
             "description": "Usually one distinct detector belonging to the spectrometer, but sometimes there might be more than one detector, which can be specified here.",
             "type": "array",
             "items": {
-                "type": "string"
+                "type": "object",
+                "required": [],
+                "properties": {
+                    "DName": {
+                        "title": "Detector name",
+                        "description": "Name of the detector. Some instructive name or alias (not needed for compact spectrometer)",
+                        "type": "string"
+                    },
+                    "DType": {
+                        "title": "Detector type",
+                        "description": "Type of the detector, e.g. CCD, CMOS, PD-array (inkl. number of pixels, phosphor, photocathode, spectral sensitivity, kinetic mode, photon counting mode, pixel size, ...",
+                        "type": "string"
+                    },
+                    "DTexpmin": {
+                        "title": "Minimum exposure time [ms]",
+                        "description": "Minimum exposure time of the detector",
+                        "type": "number"
+                    },
+                    "DTexpmax": {
+                        "title": "Maximum exposure time [ms]",
+                        "description": "Maximum exposure time of the detector",
+                        "type": "number"
+                    },
+                    "DDynamicRange": {
+                        "title": "Dynamic range [bit]",
+                        "description": "A/D converter resolution (12, 14, 16 bit)",
+                        "type": "integer"
+                    },
+                    "DDelayMin": {
+                        "title": "Minimum internal delay [ns]",
+                        "description": "Minimum internal delay the detector can realize, relevant e.g. for ICCD.",
+                        "type": "number"
+                    }
+                }
             }
-        },
-        "DName": {
-            "title": "Detector name",
-            "description": "Name of the detector. Some instructive name or alias (not needed for compact spectrometer)",
-            "type": "string"
-        },
-        "DType": {
-            "title": "Detector type",
-            "description": "Type of the detector, e.g. CCD, CMOS, PD-array (inkl. number of pixels, phosphor, photocathode, spectral sensitivity, kinetic mode, photon counting mode, pixel size, ...",
-            "type": "string"
-        },
-        "DTexpmin": {
-            "title": "Minimum exposure time [ms]",
-            "description": "Minimum exposure time of the detector",
-            "type": "number"
-        },
-        "DTexpmax": {
-            "title": "Maximum exposure time [ms]",
-            "description": "Maximum exposure time of the detector",
-            "type": "number"
-        },
-        "DDynamicRange": {
-            "title": "Dynamic range [bit]",
-            "description": "A/D converter resolution (12, 14, 16 bit)",
-            "type": "integer"
-        },
-        "DDelayMin": {
-            "title": "Minimum internal delay [ns]",
-            "description": "Minimum internal delay the detector can realize, relevant e.g. for ICCD.",
-            "type": "number"
         }
     },
     "required": [

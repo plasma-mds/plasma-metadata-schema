@@ -65,10 +65,11 @@
 <td style="text-align: center;"><strong>Acquisition time</strong></td>
 <td style="text-align: center;"><strong>XPS step width [eV]</strong></td>
 <td style="text-align: center;"><strong>Number of scans</strong></td>
+<td style="text-align: center;"><strong>Comment</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;">1</td>
-<td style="text-align: center;">Name of the measured psamples</td>
+<td style="text-align: center;">Name of the measured sample (reffering to ID/name of sample from the top)</td>
 <td style="text-align: center;">Name of the measured peak including the orbital (e.g. O1s, SURV)</td>
 <td style="text-align: center;">Value of pass energy for FAT</td>
 <td style="text-align: center;">Retardation ratio (eV)</td>
@@ -77,6 +78,7 @@
 <td style="text-align: center;">Total signal accumulation time</td>
 <td style="text-align: center;">Step width of detailed XPS measurement</td>
 <td style="text-align: center;">Number of scans for one peak</td>
+<td style="text-align: center;">Indicate with any comment specific information about the sample</td>
 </tr>
 </tbody>
 </table>
@@ -87,6 +89,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>No.</strong></td>
+<td style="text-align: center;"><strong>Sample for sputtering</strong></td>
 <td style="text-align: center;"><strong>Gas name</strong></td>
 <td style="text-align: center;"><strong>Cluster/Ion</strong></td>
 <td style="text-align: center;"><strong>Sputter energy [eV]</strong></td>
@@ -95,11 +98,33 @@
 </tr>
 <tr>
 <td style="text-align: left;">1</td>
+<td style="text-align: center;">Indicate which sample is sputtered</td>
 <td style="text-align: center;">Name of the gas used for sputtering e.g. Ar, He</td>
 <td style="text-align: center;">Cluster or ion sputtering</td>
 <td style="text-align: center;">Energy of sputter process</td>
 <td style="text-align: center;">Duration of the sputtering process</td>
 <td style="text-align: center;">Spot size of the sputtering</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="background-color: #ffffff; border: 0px;"><a style="color:#000000;"><strong>Sample handling</strong></a></div>
+<div>
+<table style="border-collapse: collapse;" border="1">
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>No.</strong></td>
+<td style="text-align: center;"><strong>Angle resolved [\u00b0]</strong></td>
+<td style="text-align: center;"><strong>Pressure variation</strong></td>
+<td style="text-align: center;"><strong>Temperature variation</strong></td>
+<td style="text-align: center;"><strong>Other Treatment during XPS</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: center;">Incident angle of sample holder to normal</td>
+<td style="text-align: center;">Pressure variation (indicate start and end pressure)</td>
+<td style="text-align: center;">Temperature variation (indicate start and end temperature)</td>
+<td style="text-align: center;">Other treatment during the PS measurement</td>
 </tr>
 </tbody>
 </table>

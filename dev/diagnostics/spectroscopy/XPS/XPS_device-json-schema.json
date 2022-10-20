@@ -64,6 +64,16 @@
             "description": "X-Ray",
             "type": "number"
         },
+        "EmissionCurrent": {
+            "title": "Emission Current [mA]",
+            "description": "Emission current of the source",
+            "type": "number"
+        },
+        "PhotonFlux": {
+            "title": "Photon flux",
+            "description": "Photon flux",
+            "type": "string"
+        },
         "Monochromatic": {
             "title": "Monochromatized",
             "description": "monochromatization (yes/no)",
@@ -108,7 +118,7 @@
             "description": "Is a cooling or heating system installed",
             "type": "array",
             "items": {
-                "type": "boolean"
+                "type": "string"
             },
             "maxItems": 1
         }
@@ -124,6 +134,8 @@
         "IncidentAngle",
         "PhotonType",
         "ExcitationValue",
+        "EmissionCurrent",
+        "PhotonFlux",
         "Monochromatic",
         "Resolution",
         "AngleSputter",

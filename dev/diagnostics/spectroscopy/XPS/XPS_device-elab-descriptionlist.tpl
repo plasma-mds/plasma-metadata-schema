@@ -22,6 +22,10 @@
 <dd>X-ray excitation source and with description of the line e.g. Al K_alpha monochromatic/ Al K_alphanon-monochromatic/Mg K_alpha</dd>
 <dt>X-Ray excitation energy e.g 1486.7 [eV]</dt>
 <dd>X-Ray</dd>
+<dt>Emission Current [mA]</dt>
+<dd>Emission current of the source</dd>
+<dt>Photon flux</dt>
+<dd>Photon flux</dd>
 <dt>Monochromatized</dt>
 <dd>monochromatization (yes/no)</dd>
 <dt>Resolution of the device</dt>

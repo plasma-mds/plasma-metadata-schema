@@ -141,12 +141,13 @@
                     "UpperBE",
                     "AcquisitionTime",
                     "StepWidth",
-                    "ScanNumber"
+                    "ScanNumber",
+                    "SampleComment"
                 ],
                 "properties": {
                     "Sample": {
                         "title": "Sample",
-                        "description": "Name of the measured psamples",
+                        "description": "Name of the measured sample (reffering to ID/name of sample from the top)",
                         "type": "array",
                         "items": {
                             "type": "string"
@@ -191,6 +192,11 @@
                         "title": "Number of scans",
                         "description": "Number of scans for one peak",
                         "type": "number"
+                    },
+                    "SampleComment": {
+                        "title": "Comment",
+                        "description": "Indicate with any comment specific information about the sample",
+                        "type": "string"
                     }
                 }
             },
@@ -203,6 +209,7 @@
             "items": {
                 "type": "object",
                 "required": [
+                    "SampleSputt",
                     "SputterIonName",
                     "Cluster",
                     "SputterEnergyValue",
@@ -210,6 +217,10 @@
                     "SputterSpot"
                 ],
                 "properties": {
+                    "SampleSputt": {
+                        "title": "Sample for sputtering",
+                        "description": "Indicate which sample is sputtered"
+                    },
                     "SputterIonName": {
                         "title": "Gas name",
                         "description": "Name of the gas used for sputtering e.g. Ar, He",
@@ -234,6 +245,42 @@
                         "title": "Spot size of sputtering [\\u00b5m]",
                         "description": "Spot size of the sputtering",
                         "type": "number"
+                    }
+                }
+            }
+        },
+        "Handling": {
+            "title": "Sample handling",
+            "description": "Different types of sample handling",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "AngleRes",
+                    "PressureVar",
+                    "TempVar",
+                    "otherTreatment"
+                ],
+                "properties": {
+                    "AngleRes": {
+                        "title": "Angle resolved [\\u00b0]",
+                        "description": "Incident angle of sample holder to normal",
+                        "type": "string"
+                    },
+                    "PressureVar": {
+                        "title": "Pressure variation",
+                        "description": "Pressure variation (indicate start and end pressure)",
+                        "type": "string"
+                    },
+                    "TempVar": {
+                        "title": "Temperature variation",
+                        "description": "Temperature variation (indicate start and end temperature)",
+                        "type": "string"
+                    },
+                    "otherTreatment": {
+                        "title": "Other Treatment during XPS",
+                        "description": "Other treatment during the PS measurement",
+                        "type": "string"
                     }
                 }
             }

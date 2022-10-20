@@ -16,7 +16,7 @@
 |2.6|SWLCalibrationDate|Last wavelength calibration date||Last wavelength calibration date of the spectrometer|string|0||
 |3|Grating|Grating||One or more gratings belonging to the spectrometer||0-n||
 |3.1|GName|Grating name||Name of the grating. Some instructive name or alias (not needed for compact spectrometer)|string|0||
-|3.2|GType|Grating type||Type of the grating, e.g. 300 l/mm, holographic, ...|string|1||
+|3.2|GType|Grating type||Type of the grating, e.g. 300 l/mm, holographic, etc.|string|1||
 |3.3|GBlazeWL|Blaze wavelength|nm|Blaze wavelength of the grating. Many gratings have a blaze wavelength (except e.g. holographic gratings).|number|0||
 |3.4|GOrder|Dispersion order used||Grating order utilized in spectrometer|	string|0||
 |3.5|GEfficiencyCurve|Grating efficiency curve||Link to grating efficiency curve|string|0||

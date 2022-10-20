@@ -18,7 +18,7 @@
 |3.1|GName|Grating name||Name of the grating. Some instructive name or alias (not needed for compact spectrometer)|string|0||
 |3.2|GType|Grating type||Type of the grating, e.g. 300 l/mm, holographic, etc.|string|1||
 |3.3|GBlazeWL|Blaze wavelength|nm|Blaze wavelength of the grating. Many gratings have a blaze wavelength (except e.g. holographic gratings).|number|0||
-|3.4|GOrder|Dispersion order used||Grating order utilized in spectrometer|	string|0||
+|3.4|GOrder|Dispersion order used||Grating order utilized in spectrometer|string|0||
 |3.5|GEfficiencyCurve|Grating efficiency curve||Link to grating efficiency curve|string|0||
 |3.6|GWLmin|Minimum wavelength|nm|Minimum wavelength possible with the grating|number|0||
 |3.7|GWLmax|Maximum wavelength|nm|Maximum wavelength possible with the grating|number|0||

@@ -11,7 +11,7 @@
 |2.1|SFNumber|f-number|1|Free aperture of spectrometer|integer|0||
 |2.2|SFocalLength|Focal length|mm|Focal length of the spectrometer, e.g. 75 mm or 500 mm|number|0||
 |2.3|SEntranceSlitWidth|Entrance slit width|µm|Width of the entrance slit, e.g. 25 µm (interchangeable slits are ignored, e.g. Avantes). Might be given as part of the experiment metadata.|number|0||
-|2.4|SExitSlitWidth|Exit slit width|µm|Width of the exit slit	number. Usually only relevant for single channel detector systems, like systems with PMT. Not relevant for compact spectrometers or OMA (optical multi-channel analyzers).|number|1||
+|2.4|SExitSlitWidth|Exit slit width|µm|Width of the exit slit number. Usually only relevant for single channel detector systems, like systems with PMT. Not relevant for compact spectrometers or OMA (optical multi-channel analyzers).|number|1||
 |2.5|SWLresolution|Spectral resolution (FWHM)|nm|Nominal resolution of the spectrometer (FWHM). Usually only relevant for compact spectrometers (one slit, one grating, one detector), as it depends on the chosen grating and entrance slit width for other systems.|number|0||
 |2.6|SWLCalibrationDate|Last wavelength calibration date||Last wavelength calibration date of the spectrometer|string|0||
 |3|Grating|Grating||One or more gratings belonging to the spectrometer||0-n||
@@ -23,7 +23,7 @@
 |3.6|GWLmin|Minimum wavelength|nm|Minimum wavelength possible with the grating|number|0||
 |3.7|GWLmax|Maximum wavelength|nm|Maximum wavelength possible with the grating|number|0||
 |3.8|GResolvingPower|Resolving power|1|Resolving power of the grating. Resolving power is the more universal measure for resolution, but FWHM resolution is more intuitive.|number|0||
-|4|Detector|Detector||Usually one distinct detector belonging to the spectrometer, but sometimes there might be more than one detector, which can be specified here.|string|0-n||
+|4|Detector|Detector||Usually one distinct detector belonging to the spectrometer, but sometimes there might be more than one detector, which can be specified here.||0-n||
 |4.1|DName|Detector name||Name of the detector. Some instructive name or alias (not needed for compact spectrometer)|string|0||
 |4.2|DType|Detector type||Type of the detector, e.g. CCD, CMOS, PD-array (inkl. number of pixels, phosphor, photocathode, spectral sensitivity, kinetic mode, photon counting mode, pixel size, ...|string|0||
 |4.3|DTexpmin|Minimum exposure time|ms|Minimum exposure time of the detector|number|0||

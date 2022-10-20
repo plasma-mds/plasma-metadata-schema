@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "System": {
+            "title": "System",
+            "description": "General information about the system/device",
+            "type": "object",
+            "required": [
+                "Name"
+            ],
+            "properties": {
+                "Name": {
+                    "title": "Name",
+                    "description": "Short name",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "System"
+    ]
+}

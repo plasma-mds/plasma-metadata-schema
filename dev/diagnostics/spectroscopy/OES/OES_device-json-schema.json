@@ -1,0 +1,195 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "System": {
+            "title": "System",
+            "description": "General information about the system/device",
+            "type": "object",
+            "required": [
+                "Name",
+                "Model",
+                "SerialNo",
+                "Manufacturer",
+                "Class",
+                "Type"
+            ],
+            "properties": {
+                "Name": {
+                    "title": "Name",
+                    "description": "Short name",
+                    "type": "string"
+                },
+                "Model": {
+                    "title": "Model",
+                    "description": "Model name",
+                    "type": "string"
+                },
+                "SerialNo": {
+                    "title": "Serial number",
+                    "description": "Identifier/Serial number",
+                    "type": "string"
+                },
+                "Manufacturer": {
+                    "title": "Manufacturer",
+                    "description": "Manufacturer of the system",
+                    "type": "string"
+                },
+                "Class": {
+                    "title": "Class",
+                    "description": "Class of system/device. Here: spectrometer, incl. detector",
+                    "type": "string"
+                },
+                "Type": {
+                    "title": "Type",
+                    "description": "Type of spectrometer: compact or non-compact",
+                    "type": "string",
+                    "enum": [
+                        "\\tcompact",
+                        "non-compact"
+                    ]
+                }
+            }
+        },
+        "SpectrometerGeneral": {
+            "title": "Spectrometer",
+            "description": "General information on spectrometer. Compact spectrometers are defined as owing one detector, one grating, one slit. This affects some properties.",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "SExitSlitWidth"
+                ],
+                "properties": {
+                    "SFNumber": {
+                        "title": "f-number [1]",
+                        "description": "Free aperture of spectrometer",
+                        "type": "integer"
+                    },
+                    "SFocalLength": {
+                        "title": "Focal length [mm]",
+                        "description": "Focal length of the spectrometer, e.g. 75 mm or 500 mm",
+                        "type": "number"
+                    },
+                    "SEntranceSlitWidth": {
+                        "title": "Entrance slit width [\\u00b5m]",
+                        "description": "Width of the entrance slit, e.g. 25 \\u00b5m (interchangeable slits are ignored, e.g. Avantes). Might be given as part of the experiment metadata.",
+                        "type": "number"
+                    },
+                    "SExitSlitWidth": {
+                        "title": "Exit slit width [\\u00b5m]",
+                        "description": "Width of the exit slit\\tnumber. Usually only relevant for single channel detector systems, like systems with PMT. Not relevant for compact spectrometers or OMA (optical multi-channel analyzers).",
+                        "type": "number"
+                    },
+                    "SWLresolution": {
+                        "title": "Spectral resolution (FWHM) [nm]",
+                        "description": "Nominal resolution of the spectrometer (FWHM). Usually only relevant for compact spectrometers (one slit, one grating, one detector), as it depends on the chosen grating and entrance slit width for other systems.",
+                        "type": "number"
+                    },
+                    "SWLCalibrationDate": {
+                        "title": "Last wavelength calibration date",
+                        "description": "Last wavelength calibration date of the spectrometer",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Grating": {
+            "title": "Grating",
+            "description": "One or more gratings belonging to the spectrometer",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "GType"
+                ],
+                "properties": {
+                    "GName": {
+                        "title": "Grating name",
+                        "description": "Name of the grating. Some instructive name or alias (not needed for compact spectrometer)",
+                        "type": "string"
+                    },
+                    "GType": {
+                        "title": "Grating type",
+                        "description": "Type of the grating, e.g. 300 l/mm, holographic, etc.",
+                        "type": "string"
+                    },
+                    "GBlazeWL": {
+                        "title": "Blaze wavelength [nm]",
+                        "description": "Blaze wavelength of the grating. Many gratings have a blaze wavelength (except e.g. holographic gratings).",
+                        "type": "number"
+                    },
+                    "GOrder": {
+                        "title": "Dispersion order used",
+                        "description": "Grating order utilized in spectrometer",
+                        "type": "string"
+                    },
+                    "GEfficiencyCurve": {
+                        "title": "Grating efficiency curve",
+                        "description": "Link to grating efficiency curve",
+                        "type": "string"
+                    },
+                    "GWLmin": {
+                        "title": "Minimum wavelength [nm]",
+                        "description": "Minimum wavelength possible with the grating",
+                        "type": "number"
+                    },
+                    "GWLmax": {
+                        "title": "Maximum wavelength [nm]",
+                        "description": "Maximum wavelength possible with the grating",
+                        "type": "number"
+                    },
+                    "GResolvingPower": {
+                        "title": "Resolving power [1]",
+                        "description": "Resolving power of the grating. Resolving power is the more universal measure for resolution, but FWHM resolution is more intuitive.",
+                        "type": "number"
+                    }
+                }
+            }
+        },
+        "Detector": {
+            "title": "Detector",
+            "description": "Usually one distinct detector belonging to the spectrometer, but sometimes there might be more than one detector, which can be specified here.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "DName": {
+            "title": "Detector name",
+            "description": "Name of the detector. Some instructive name or alias (not needed for compact spectrometer)",
+            "type": "string"
+        },
+        "DType": {
+            "title": "Detector type",
+            "description": "Type of the detector, e.g. CCD, CMOS, PD-array (inkl. number of pixels, phosphor, photocathode, spectral sensitivity, kinetic mode, photon counting mode, pixel size, ...",
+            "type": "string"
+        },
+        "DTexpmin": {
+            "title": "Minimum exposure time [ms]",
+            "description": "Minimum exposure time of the detector",
+            "type": "number"
+        },
+        "DTexpmax": {
+            "title": "Maximum exposure time [ms]",
+            "description": "Maximum exposure time of the detector",
+            "type": "number"
+        },
+        "DDynamicRange": {
+            "title": "Dynamic range [bit]",
+            "description": "A/D converter resolution (12, 14, 16 bit)",
+            "type": "integer"
+        },
+        "DDelayMin": {
+            "title": "Minimum internal delay [ns]",
+            "description": "Minimum internal delay the detector can realize, relevant e.g. for ICCD.",
+            "type": "number"
+        }
+    },
+    "required": [
+        "System"
+    ]
+}

@@ -5,7 +5,7 @@
 |3|EntranceSlitWidth|Entrance slit width |µm|Entrance slit width. Usually only relevant for non-compact spectrometers, because of flexible slit width (see fact sheet).|number|0||
 |4|Gname|Grating name||Name of the grating used. Not relevant for compact spectrometers.|string|0||
 |5|GMP|Grating middle position|nm|Wavelength in the middle of the detector array the grating is adjusted to (center wavelength)|number|1||
-|6|Dtexp|Exposure time|s|Exposure time for the detector|	number|1||
+|6|Dtexp|Exposure time|s|Exposure time for the detector|number|1||
 |7|Dgain|Detector gain|| Gain of the detector, e.g. relevant for ICCD|number|0||
 |8|OName|Oscilloscope name||Name of the oscilloscope|string|1||
 |9|OTimeResolution|Resolution|s|Div time resolution of the oscilloscope|number|1||

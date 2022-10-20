@@ -6,7 +6,7 @@
 |1.3|SerialNo|Serial number||Identifier/Serial number|string|1||
 |1.4|Manufacturer|Manufacturer||Manufacturer of the system|string|1||
 |1.5|Class|Class||Class of system/device. Here: spectrometer, incl. detector|string|1||
-|1.6|Type|Type||Type of spectrometer: compact or non-compact|string|1|	compact;non-compact|
+|1.6|Type|Type||Type of spectrometer: compact or non-compact|string|1|compact;non-compact|
 |2|SpectrometerGeneral|Spectrometer||General information on spectrometer. Compact spectrometers are defined as owing one detector, one grating, one slit. This affects some properties.||0-n||
 |2.1|SFNumber|f-number|1|Free aperture of spectrometer|integer|0||
 |2.2|SFocalLength|Focal length|mm|Focal length of the spectrometer, e.g. 75 mm or 500 mm|number|0||

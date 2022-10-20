@@ -14,7 +14,7 @@
 |10.2|OChAlias|Channel alias||Alias/Description of channel, e.g. current|string|0||
 |10.3|OChVerticalUnit|Vertical unit||Unit of the measured signal of the channel, e.g. Ampere|string|1||
 |10.4|OChResolutionVertical|Vertical resolution|V/div|Vertical div resolution of the channel (volts/div)|number|1||
-|11|Delays|Delay settings||Specification of delay settings|0-n||
+|11|Delays|Delay settings||Specification of delay settings||0-n||
 |11.1|DReferenceTimeName|Reference time name||Name of the reference time. Each delay refers to some time, which has to be specified by name and value|string|1||
 |11.2|DReferenceTimeValue|Reference time value|s|Value of the reference time, might be 0 or some other value|number|1||
 |11.3|DName|Delay name||Name of the delay and it value relative to reference time|string|1||

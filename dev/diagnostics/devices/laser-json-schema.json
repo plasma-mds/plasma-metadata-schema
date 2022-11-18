@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "Type": {
+            "title": "Type",
+            "description": "Type of the laser, e.g. QCL, tunable diode, broadband",
+            "type": "string"
+        },
+        "CentralWavelength": {
+            "title": "Central wavelength [nm]",
+            "description": "Central wavelength (CWL)",
+            "type": "number"
+        },
+        "FWHM": {
+            "title": "FWHM [nm]",
+            "description": "Full width at half maximum",
+            "type": "number"
+        },
+        "PulseDuration": {
+            "title": "Pulse duration [ns]",
+            "description": "Pulse duration",
+            "type": "number"
+        },
+        "PulseEnergy": {
+            "title": "Pulse energy [mJ]",
+            "description": "Pulse energy",
+            "type": "number"
+        },
+        "Current": {
+            "title": "Current [mA]",
+            "description": "Laser current",
+            "type": "number"
+        },
+        "Temperature": {
+            "title": "Temperature [\\u00b0C]",
+            "description": "Laser temperature",
+            "type": "number"
+        },
+        "OutputPower": {
+            "title": "Output power [mW]",
+            "description": "Output power",
+            "type": "number"
+        }
+    },
+    "required": [
+        "Type",
+        "CentralWavelength",
+        "FWHM",
+        "PulseDuration",
+        "PulseEnergy",
+        "Current",
+        "Temperature",
+        "OutputPower"
+    ]
+}

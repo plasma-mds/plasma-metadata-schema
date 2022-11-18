@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "Type": {
+            "title": "Type",
+            "description": "Type of the device, e.g. spectrometer",
+            "type": "string"
+        },
+        "Name": {
+            "title": "Name",
+            "description": "Short name of the device",
+            "type": "string"
+        },
+        "Model": {
+            "title": "Model",
+            "description": "Model name",
+            "type": "string"
+        },
+        "Manufacturer": {
+            "title": "Manufacturer",
+            "description": "Manufacturer of the system",
+            "type": "string"
+        },
+        "SerialNo": {
+            "title": "Serial number",
+            "description": "Identifier/Serial number",
+            "type": "string"
+        },
+        "InventoryNo": {
+            "title": "Inventory number",
+            "description": "Internal inventory number",
+            "type": "string"
+        },
+        "LastLocation": {
+            "title": "Last location",
+            "description": "Last location of the device",
+            "type": "string"
+        },
+        "Contact": {
+            "title": "Responsible contact",
+            "description": "Contact person / lab responsible",
+            "type": "string"
+        },
+        "LastEdit": {
+            "title": "Last edited",
+            "description": "Last edit of the dataset",
+            "type": "string"
+        },
+        "Class": {
+            "title": "Device class",
+            "description": "Class of system/device; this defines the additional schema elements to be used for device specific metadata, e.g. compact OES spectrometer",
+            "type": "string"
+        }
+    },
+    "required": [
+        "Type",
+        "Name",
+        "Model",
+        "Manufacturer",
+        "SerialNo",
+        "Class"
+    ]
+}

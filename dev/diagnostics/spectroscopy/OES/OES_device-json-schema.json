@@ -156,7 +156,6 @@
             "type": "array",
             "items": {
                 "type": "object",
-                "required": [],
                 "properties": {
                     "DName": {
                         "title": "Detector name",

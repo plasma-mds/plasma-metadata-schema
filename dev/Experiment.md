@@ -11,4 +11,3 @@
 |8.1|MeasID|Number||Consecutive number for the measurements, e.g. m001, m002 or consecutive labels for measurement data files|string|1||
 |8.2|MeasNotes|Notes||Additional notes on the measurement|string|0||
 |8.3|MeasClass|Class of measurement||Class / type of measurement, e.g. OES, XPS; this will specify the subschema to be used to collect diagnostic specific metadata||1||
-

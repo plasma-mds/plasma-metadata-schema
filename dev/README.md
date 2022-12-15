@@ -2,6 +2,35 @@
 
 This folder is prepared to collect flat listings of properties, e.g. for plasma sources, media, substrates, methods etc., which are considered to be relevant for a proper documentation of these entities.
 
+## General information on metadata structure
+
+### Experiments and measurements
+
+Diagnostic methods often applied in plasma science are categorized as represented by the sub-folders in this directory. Diagnostic methods can focus on the plasma source, the plasma medium or a treated target, respectively, according to the structure of [Plasma-MDS](https://github.com/plasma-mds/plasma-metadata-schema). The subschemas in this folder are intended to support a more structured description of the performed experiments or measurement campaigns, respectively. Note that "experiment" is ment here as a general term including modelling and computer simulations. Some thoughts to clarify the structure:
+
+* One experiment may consists of consecutive measurements / simulations (often with parameter variation or repetitive measurements / simulations).
+
+* One measurement / simulation may consists of a number of files containing the measurement / simulation results.
+
+* A series of experiments forms a measurement / simulation campaign (usually with different setups, different diagnostics).
+
+The general experiment schema [Experiment.md](Experiment.md) has the purpose to describe one experiment, maybe consisting of several measurements. This forms one part of the complete experiment description, which is to be supplemented with descriptions of the involved devices and methods and samples.
+
+### Methods and devices
+
+Diagnostic methods (including modelling / simulations) often involve certain devices or software. These "tools" typically have fixed parameters and changeable settings (configurations), which are tuned during measurements or simulations. To reduce the amount of information which is to be collected for a complete documentation of measurements / simulations, important fixed parameters are noted in "fact sheets" for each device and software, respectively. These fact sheets can be part of an instrument database from which instruments can be linked to experiments as they are used.
+Device fact sheets related to the schemas for diagnostic methods in the subfolders are collected in the the sub-folder [diagnostics/devices/](diagnostics/devices/).
+This includes a generic schema for specification of a measurement device (or software), which forms one part of the complete device / software description. It is to be supplemented by individual properties of the tool as specified by the sub-schemas for each device class.
+
+### Samples
+
+Invariant sample properties can be managed in a sample database, just as with instruments. In this way, samples can be linked to the experiments in which they are used, and the experiment description should then describe only the procedure in which way the sample was used.
+
+### Implementation in electronic laboratory notebook
+
+The described structure can be implemented in an electronic laboratory notebook (ELN) to simplify the extraction of metadata according to Plasma-MDS upon dataset publication.
+For example, [eLabFTW](https://www.elabftw.net), which is a free and open source ELN, provides the possibility to maintain database items (e.g. for instruments or sample databases), link database items to experiments and interlink experiments to form a measurement campaign.
+
 ## Workflow
 
 * A subfolder structure is used to categorize entities.

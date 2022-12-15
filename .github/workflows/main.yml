@@ -28,6 +28,7 @@ jobs:
       - name: Run a multi-line script
         run: |
             sudo apt update -y 
+            sudo apt install -y curl
             sudo apt install -y python-pathlib2
             wget https://raw.githubusercontent.com/plasma-mds/markdown2json-converter-py/main/mdconverter.py
             cd dev; python ../mdconverter.py; rm ../mdconverter.py

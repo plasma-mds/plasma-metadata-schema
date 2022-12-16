@@ -13,7 +13,7 @@
 |12|pressureMax|Maximum gas pressure|Pa|Maximum pressure of the gas for which the model/software is valid|number|0||
 |13|plasmaState|Plasma state||State of thermodynamic equilibrium of the plasma described by the model/software|string|1-2|thermal; non-thermal||
 |14|software|Software||Further information for software packages||0||
-|14.1|license|License||Legal and licensing information|string|1|GPLv3; GPLv2; LGPL; MIT; Apache; proprietary; All rights reserved
+|14.1|license|License||Legal and licensing information|string|1|GPLv3; GPLv2; LGPL; MIT; Apache; proprietary; All rights reserved|
 |14.2|repository|Repository||Link to the software repository where the code is maintained|string|0||
 |14.3|language|Programming language||Used programming language|string|0-n||
 |14.4|requirements|Runtime requirements||Requirements to run the software, e.g. operating system, dependencies|string|1||

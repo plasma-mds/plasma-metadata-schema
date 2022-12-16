@@ -13,4 +13,4 @@
 |11|SafetyInfo|Safety information||Official sample information|string|0||
 |12|PressureMS|Pressure in MS|Pa|Pressure in MS during measurement|string|1||
 |13|PressureChamber|Pressure in plasma chamber|Pa|Pressure in plasma chamber|string|1||
-|14|MSPlasmaComment|Comment on plasma|Comments on plasma processing for this specific measurement|string|0||
+|14|MSPlasmaComment|Comment on plasma||Comments on plasma processing for this specific measurement|string|0||

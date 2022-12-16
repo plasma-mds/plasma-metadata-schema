@@ -43,29 +43,17 @@
         "dissipatedPowerMin": {
             "title": "Min. power [W]",
             "description": "Minimum power dissipated in the plasma",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "dissipatedPowerMax": {
             "title": "Max. power [W]",
             "description": "Maximum power dissipated in the plasma",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "reflectedPower": {
             "title": "Reflected power [%]",
             "description": "Part of the input power which is reflected and not coupled to the electrode",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "ppVoltageMin": {
             "title": "Min. voltage (p-p) [V]",
@@ -90,38 +78,22 @@
         "ppCurrentMin": {
             "title": "Min. current (p-p) [A]",
             "description": "Minimum peak-to-peak current",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "ppCurrentMax": {
             "title": "Max. current (p-p) [A]",
             "description": "Maximum peak-to-peak current",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "phaseShiftMin": {
             "title": "Min. phase shift [\\u00b0]",
             "description": "Minimum phase shift between current and voltage",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "phaseShiftMax": {
             "title": "Max. phase shift [\\u00b0]",
             "description": "Maximum phase shift between current and voltage",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "burstMode": {
             "title": "Burst mode",
@@ -131,38 +103,22 @@
         "burstPeriodMin": {
             "title": "Min. burst period [s]",
             "description": "Minimum time from the start of one burst to the start of next burst",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "burstPeriodMax": {
             "title": "Max. burst period [s]",
             "description": "Maximum time from the start of one burst to the start of next burst",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "burstCountMin": {
             "title": "Min. burst counts",
             "description": "Minimum number of cycles in on mode",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "burstCountMax": {
             "title": "Max. burst counts",
             "description": "Maximum number of cycles in on mode",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "gasMix": {
             "title": "Gas (mixture)",
@@ -172,38 +128,22 @@
         "feedGasFlowRateMin": {
             "title": "Min. gas flow rate [slm]",
             "description": "Minimum flow rate of the feed gas in which the plasma is ignited",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "feedGasFlowRateMax": {
             "title": "Max. gas flow rate [slm]",
             "description": "Maximum flow rate of the feed gas in which the plasma is ignited",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "addGasFlowRateMin": {
             "title": "Min. gas admixture [sccm]",
             "description": "Minimum flow rate of the gas admixture",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "addGasFlowRateMax": {
             "title": "Max. gas admixture [sccm]",
             "description": "Maximum flow rate of the gas admixture",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         }
     },
     "required": [

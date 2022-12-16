@@ -13,20 +13,12 @@
         "dissipatedPower": {
             "title": "Power [W]",
             "description": "Power dissipated in the plasma",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "reflectedPower": {
             "title": "Reflected power [%]",
             "description": "Part of the input power which is reflected and not coupled to the electrode",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "ppVoltage": {
             "title": "Voltage (p-p) [V]",
@@ -41,20 +33,12 @@
         "ppCurrent": {
             "title": "Current (p-p) [A]",
             "description": "Peak-to-peak current",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "phaseShift": {
             "title": "Phase shift [\\u00b0]",
             "description": "Phase shift between current and voltage",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "burstMode": {
             "title": "Burst mode",
@@ -64,20 +48,12 @@
         "burstPeriod": {
             "title": "Burst period [s]",
             "description": "Time from the start of one burst to the start of next burst",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "burstCount": {
             "title": "Burst counts",
             "description": "Number of cycles in on mode",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "gasMix": {
             "title": "Gas (mixture)",
@@ -87,20 +63,12 @@
         "feedGasFlowRate": {
             "title": "Gas flow rate [slm]",
             "description": "Flow rate of the feed gas in which the plasma is ignited",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "addGasFlowRate": {
             "title": "Gas admixture [sccm]",
             "description": "Flow rate of the gas admixture",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "ambGas": {
             "title": "Ambient gas",

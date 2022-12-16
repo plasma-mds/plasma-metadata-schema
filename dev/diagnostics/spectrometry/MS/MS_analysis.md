@@ -8,7 +8,7 @@
 |6|Mass maximum|Mass maximum|amu|Mass maximum|string|1||
 |7|TimeResolution|Time resolution|s|Time resolution of the measurement|number|0||
 |8|MSExpComment|Comment MS experimental part|Comment for the experimental part of the MS|(number of sweeps, acquisition time etc.)|string|0||
-|9|Information about the plasma|PlasmaProcessID|Plasma process name||Plasma process name (including admixture etc.)|string|1||
+|9|Information about the plasma|PlasmaProcessID||Plasma process name (including admixture etc.)|string|1||
 |10|FileName|File name||File name of this measurement|string|1||
 |11|SafetyInfo|Safety information||Official sample information|string|0||
 |12|PressureMS|Pressure in MS|Pa|Pressure in MS during measurement|string|1||

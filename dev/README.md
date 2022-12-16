@@ -1,4 +1,4 @@
-# How to contribute to the further development of Plasma-MDS
+# How to use and contribute
 
 This folder is prepared to collect flat listings of properties, e.g. for plasma sources, media, substrates, methods etc., which are considered to be relevant for a proper documentation of these entities.
 
@@ -19,7 +19,7 @@ The general experiment schema [Experiment.md](Experiment.md) has the purpose to 
 ### Methods and devices
 
 Diagnostic methods (including modelling / simulations) often involve certain devices or software. These "tools" typically have fixed parameters and changeable settings (configurations), which are tuned during measurements or simulations. To reduce the amount of information which is to be collected for a complete documentation of measurements / simulations, important fixed parameters are noted in "fact sheets" for each device and software, respectively. These fact sheets can be part of an instrument database from which instruments can be linked to experiments as they are used.
-Device fact sheets related to the schemas for diagnostic methods in the subfolders are collected in the the sub-folder [diagnostics/devices/](diagnostics/devices/).
+Device fact sheets related to the schemas for diagnostic methods in the sub-folders are collected in the the sub-folder [diagnostics/devices/](diagnostics/devices/).
 This includes a generic schema for specification of a measurement device (or software), which forms one part of the complete device / software description. It is to be supplemented by individual properties of the tool as specified by the sub-schemas for each device class.
 
 ### Samples

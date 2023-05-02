@@ -10,7 +10,7 @@
 |6|EnergyFilter|Energy filter||Energy filter used|boolean|0|Besserl box; sector field; other; none|
 |6.1|EnergyFilterMin|Energy filter minimum|eV|Energy filter minimum|number|0||
 |6.2|EnergyFilterMax|Energy filter maximum|eV|Energy filter maximum|number|0||
-|7|MassFilter|Mass filter||string|0||
+|7|MassFilter|Mass filter||||0||
 |7.1|MassRange|Mass range|amu|Mass range|string|1||
 |8|Detector|Detector type||Type and name of the detector|boolean|1|Faraday cup; SEM in analog mode (current measurement); SEM in counting mode (counts per second)|
 |9|SoftwareAcquire|Software for acquisition||SW to acquire the data|string|1||

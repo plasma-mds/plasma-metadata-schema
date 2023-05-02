@@ -37,7 +37,7 @@
         },
         "MagnetronTargetMaterial": {
             "title": "target material",
-            "description": "Material description e.g. 99,99at% Al, Ti\\u2026// inserts",
+            "description": "Material description e.g. 99,99at% Al, Ti// inserts",
             "type": "string"
         }
     },

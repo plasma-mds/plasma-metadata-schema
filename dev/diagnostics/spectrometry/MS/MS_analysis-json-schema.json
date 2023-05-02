@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "MeasSpecification": {
+            "title": "Measurement Specification",
+            "description": "Measurement Specification",
+            "type": "boolean"
+        },
+        "MeasQuantity": {
+            "title": "Measured quantity",
+            "description": "Measred quantity",
+            "type": "array",
+            "items": {
+                "type": "boolean"
+            },
+            "minItems": 1
+        },
+        "ElectronEnergy": {
+            "title": "Electron energy [eV]",
+            "description": "(Typical) electron energy",
+            "type": "number"
+        },
+        "IonEnergy": {
+            "title": "Ion energy [eV]",
+            "description": "(Typical) ion energy",
+            "type": "number"
+        },
+        "Mass minimum": {
+            "title": "Mass miminum [amu]",
+            "description": "Mass minimum",
+            "type": "string"
+        },
+        "Mass maximum": {
+            "title": "Mass maximum [amu]",
+            "description": "Mass maximum",
+            "type": "string"
+        },
+        "TimeResolution": {
+            "title": "Time resolution [s]",
+            "description": "Time resolution of the measurement",
+            "type": "number"
+        },
+        "MSExpComment": {
+            "title": "Comment MS experimental part [Comment for the experimental part of the MS]",
+            "description": "(number of sweeps, acquisition time etc.)",
+            "type": "string"
+        },
+        "Information about the plasma": {
+            "title": "PlasmaProcessID",
+            "description": "Plasma process name (including admixture etc.)",
+            "type": "string"
+        },
+        "FileName": {
+            "title": "File name",
+            "description": "File name of this measurement",
+            "type": "string"
+        },
+        "SafetyInfo": {
+            "title": "Safety information",
+            "description": "Official sample information",
+            "type": "string"
+        },
+        "PressureMS": {
+            "title": "Pressure in MS [Pa]",
+            "description": "Pressure in MS during measurement",
+            "type": "string"
+        },
+        "PressureChamber": {
+            "title": "Pressure in plasma chamber [Pa]",
+            "description": "Pressure in plasma chamber",
+            "type": "string"
+        },
+        "MSPlasmaComment": {
+            "title": "Comment on plasma",
+            "description": "Comments on plasma processing for this specific measurement",
+            "type": "string"
+        }
+    },
+    "required": [
+        "MeasSpecification",
+        "MeasQuantity",
+        "ElectronEnergy",
+        "IonEnergy",
+        "Mass minimum",
+        "Mass maximum",
+        "Information about the plasma",
+        "FileName",
+        "PressureMS",
+        "PressureChamber"
+    ]
+}

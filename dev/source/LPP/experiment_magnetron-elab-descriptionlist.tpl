@@ -13,5 +13,5 @@
 <dt>identical with electrode</dt>
 <dd>Target electrode equal to driving electrode</dd>
 <dt>target material</dt>
-<dd>Material description e.g. 99,99at% Al, Ti\u2026// inserts</dd>
+<dd>Material description e.g. 99,99at% Al, Ti// inserts</dd>
 </dl>

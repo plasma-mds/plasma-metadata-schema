@@ -38,11 +38,7 @@
         "reflectedPower": {
             "title": "Reflected power [%]",
             "description": "Part of the input power which is reflected and not coupled to the electrode",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "powerSupply": {
             "title": "Power supply",
@@ -52,110 +48,62 @@
         "currentValue": {
             "title": "Current [A]",
             "description": "Applied current",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "maxItems": 1
+            "type": "string"
         },
         "waveform": {
             "title": "Waveform",
             "description": "Shape of voltage signal",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "maxItems": 1
+            "type": "string"
         },
         "voltageValue": {
             "title": "Applied voltage [V]",
             "description": "External voltage applied to the system",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "frequencyValue": {
             "title": "Frequency [Hz]",
             "description": "Frequency of the voltage signal",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "amplitudeValue": {
             "title": "Voltage amplitude [V]",
             "description": "Amplitude of the voltage signal",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "dcOffsetValue": {
             "title": "DC offset [V]",
             "description": "DC offset for voltage signal",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "pulseWidthValue": {
             "title": "Pulse width [ms]",
             "description": "Time specifying the width of the voltage pulse",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "riseTimeValue": {
             "title": "Voltage rise time [s]",
             "description": "Time change from a specified low value (offset) to a specified high value (amplitude)",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "dutyCycle": {
             "title": "Duty cycle [%]",
             "description": "Fraction of one period in which the signal is active (on-time)",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "rampSymmetryValue": {
             "title": "Ramp symmetry [%]",
             "description": "Rise time to fall time ratio",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "PulseMode": {
             "title": "Pulse mode",
             "description": "Power supply mode where the voltage signal is switched between on and off mode",
-            "type": "array",
-            "items": {
-                "type": "boolean"
-            },
-            "maxItems": 1
+            "type": "boolean"
         },
         "burstPeriodValue": {
             "title": "Pulse period [ms]",
             "description": "Time from the start of one burst to the start of next burst",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "gasMix": {
             "title": "Gas (mixture)",
@@ -165,43 +113,27 @@
         "gasFlowRateValue": {
             "title": "Gas flow rate [sccm]",
             "description": "Flow rate of the gas (mixture) in which the plasma is ignited",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "precursortype": {
             "title": "Precursor type",
             "description": "Precursor type used",
-            "type": "array",
+            "type": "string",
             "enum": [
                 "solid",
                 "liquid",
                 "powder"
-            ],
-            "items": {
-                "type": "string"
-            },
-            "maxItems": 1
+            ]
         },
         "precursorname": {
             "title": "Precursor name",
             "description": "Chemical description of precursor",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "maxItems": 1
+            "type": "string"
         },
         "chemical description": {
             "title": "precursorflow",
             "description": "Precursor flow",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "gasTemperatureValue": {
             "title": "Gas temperature [K]",
@@ -221,11 +153,7 @@
         "pumpSpeedValue": {
             "title": "Pump speed [l s^(-1)]",
             "description": "pump speed",
-            "type": "array",
-            "items": {
-                "type": "number"
-            },
-            "maxItems": 1
+            "type": "number"
         },
         "ElectrodeType": {
             "title": "Electrode type",

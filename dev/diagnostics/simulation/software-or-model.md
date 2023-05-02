@@ -3,7 +3,10 @@
 |1|name|Name||Name of the model/software|string|1||
 |3|identifier|Identifier||Identifier of the model/software, e.g. URL, DOI|string|1||
 |4|group|Group||Developer group(s)|string|1-n||
-|5|authors|Authors||Authors of the model/software|string|1||
+|5|contributors|Contributors||Contributors/creators/authors of the model/software||1||
+|5.1|name|Name||Name of the contributor|string|1||
+|5.2|id|Identifier||Identifier of the contributor|string|0||
+|5.3|role|Role||Role of the contributor, e.g. main developer|string|1||
 |6|reference|Reference (DOI)||DOI of reference(s) describing the model/software|string|0-n||
 |7|approach|Approach||Type of the approach, e.g. fluid, kinetic, hybrid|string|1-n||
 |8|dimensionality|Dimensionality||Dimensionality of the model/simulation, e.g. 1D, 2D, 2D-t|string|1-n||

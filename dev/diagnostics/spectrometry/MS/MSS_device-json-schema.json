@@ -4,5 +4,111 @@
     "title": "some schema title",
     "description": "some schema description",
     "type": "object",
-    "properties": {}
+    "properties": {
+        "name": {
+            "title": "Name",
+            "description": "Name of the MS device",
+            "type": "string"
+        },
+        "sn": {
+            "title": "Serial number",
+            "description": "Serial number of the device",
+            "type": "string"
+        },
+        "developedBy": {
+            "title": "Developer",
+            "description": "Name of the company",
+            "type": "string"
+        },
+        "MaintenanceDate": {
+            "title": "Last maintenance date",
+            "description": "The last date of maintenance",
+            "type": "string"
+        },
+        "Ioniser": {
+            "title": "Ioniser type",
+            "description": "Cross beam/open etc.",
+            "type": "string"
+        },
+        "IonisationEnergyMin": {
+            "title": "Ionisation minimum energy [eV]",
+            "description": "Ionisation minimum energy",
+            "type": "number"
+        },
+        "IonisationEnergyMax": {
+            "title": "Ionisation maxmimum energy [eV]",
+            "description": "Ionisation maxmimum energy",
+            "type": "number"
+        },
+        "EnergyFilter": {
+            "title": "Energy filter",
+            "description": "Energy filter used",
+            "type": "boolean"
+        },
+        "EnergyFilterMin": {
+            "title": "Energy filter minimum [eV]",
+            "description": "Energy filter minimum",
+            "type": "number"
+        },
+        "EnergyFilterMax": {
+            "title": "Energy filter maximum [eV]",
+            "description": "Energy filter maximum",
+            "type": "number"
+        },
+        "MassFilter": {
+            "title": "Mass filter",
+            "type": "object",
+            "required": [
+                "MassRange"
+            ],
+            "properties": {
+                "MassRange": {
+                    "title": "Mass range [amu]",
+                    "description": "Mass range",
+                    "type": "string"
+                }
+            }
+        },
+        "Detector": {
+            "title": "Detector type",
+            "description": "Type and name of the detector",
+            "type": "boolean"
+        },
+        "SoftwareAcquire": {
+            "title": "Software for acquisition",
+            "description": "SW to acquire the data",
+            "type": "string"
+        },
+        "TimeResolved": {
+            "title": "Time resolved [s]",
+            "description": "with which time resolution have been the data obtained?",
+            "type": "string",
+            "enum": [
+                "yes",
+                "no"
+            ]
+        },
+        "MSPumping": {
+            "title": "Multi stage differential pumping installed?",
+            "description": "Multi stage differential pumping installed?",
+            "type": "boolean"
+        },
+        "MSComment": {
+            "title": "Comment on device",
+            "description": "Comment any other specification for the device",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "developedBy",
+        "MaintenanceDate",
+        "Ioniser",
+        "IonisationEnergyMin",
+        "IonisationEnergyMax",
+        "Detector",
+        "SoftwareAcquire",
+        "TimeResolved",
+        "MSPumping"
+    ]
 }

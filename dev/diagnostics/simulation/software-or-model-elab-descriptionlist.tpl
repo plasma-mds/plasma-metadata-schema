@@ -6,8 +6,6 @@
 <dd>Identifier of the model/software, e.g. URL, DOI</dd>
 <dt>Group</dt>
 <dd>Developer group(s)</dd>
-<dt>Authors</dt>
-<dd>Authors of the model/software</dd>
 <dt>Reference (DOI)</dt>
 <dd>DOI of reference(s) describing the model/software</dd>
 <dt>Approach</dt>
@@ -24,6 +22,14 @@
 <dd>Maximum pressure of the gas for which the model/software is valid</dd>
 <dt>Plasma state</dt>
 <dd>State of thermodynamic equilibrium of the plasma described by the model/software</dd>
+<dt style="background-color: #ffffff; border: 0px; height: 10px;"></dt>
+<dt style="background-color: #ffffff; border: 0px;"><a style="color: #000000;"><strong>Contributors</strong></a></dt>
+<dt>Name</dt>
+<dd>Name of the contributor</dd>
+<dt>Identifier</dt>
+<dd>Identifier of the contributor</dd>
+<dt>Role</dt>
+<dd>Role of the contributor, e.g. main developer</dd>
 <dt style="background-color: #ffffff; border: 0px; height: 10px;"></dt>
 <dt style="background-color: #ffffff; border: 0px;"><a style="color: #000000;"><strong>Software</strong></a></dt>
 <dt>License</dt>

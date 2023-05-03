@@ -24,10 +24,31 @@
             },
             "minItems": 1
         },
-        "authors": {
-            "title": "Authors",
-            "description": "Authors of the model/software",
-            "type": "string"
+        "contributors": {
+            "title": "Contributors",
+            "description": "Contributors/creators/authors of the model/software",
+            "type": "object",
+            "required": [
+                "name",
+                "role"
+            ],
+            "properties": {
+                "name": {
+                    "title": "Name",
+                    "description": "Name of the contributor",
+                    "type": "string"
+                },
+                "id": {
+                    "title": "Identifier",
+                    "description": "Identifier of the contributor",
+                    "type": "string"
+                },
+                "role": {
+                    "title": "Role",
+                    "description": "Role of the contributor, e.g. main developer",
+                    "type": "string"
+                }
+            }
         },
         "reference": {
             "title": "Reference (DOI)",
@@ -143,7 +164,7 @@
         "name",
         "identifier",
         "group",
-        "authors",
+        "contributors",
         "approach",
         "dimensionality",
         "plasmaState"

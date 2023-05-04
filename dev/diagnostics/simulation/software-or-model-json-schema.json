@@ -15,6 +15,14 @@
             "description": "Identifier of the model/software, e.g. URL, DOI",
             "type": "string"
         },
+        "reference": {
+            "title": "Reference (DOI)",
+            "description": "DOI of reference(s) describing the model/software",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
         "group": {
             "title": "Group",
             "description": "Developer group(s)",
@@ -29,116 +37,99 @@
             "description": "Contributors/creators/authors of the model/software",
             "type": "object",
             "required": [
-                "name",
-                "role"
+                "contributorName",
+                "contributorRole"
             ],
             "properties": {
-                "name": {
+                "contributorName": {
                     "title": "Name",
                     "description": "Name of the contributor",
                     "type": "string"
                 },
-                "id": {
+                "contributorId": {
                     "title": "Identifier",
-                    "description": "Identifier of the contributor",
+                    "description": "Identifier of the contributor, e.g. ORCID",
                     "type": "string"
                 },
-                "role": {
+                "contributorRole": {
                     "title": "Role",
                     "description": "Role of the contributor, e.g. main developer",
                     "type": "string"
                 }
             }
         },
-        "reference": {
-            "title": "Reference (DOI)",
-            "description": "DOI of reference(s) describing the model/software",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
+        "purpose": {
+            "title": "Purpose",
+            "description": "General purpose or application range of the model/software",
+            "type": "string"
         },
         "approach": {
             "title": "Approach",
             "description": "Type of the approach, e.g. fluid, kinetic, hybrid",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "minItems": 1
+            "type": "string"
         },
         "dimensionality": {
             "title": "Dimensionality",
-            "description": "Dimensionality of the model/simulation, e.g. 1D, 2D, 2D-t",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "minItems": 1
+            "description": "Dimensionality of the model/software if this is applicable, e.g. 0D, 1D, 2D, 2D-t",
+            "type": "string"
         },
-        "plasmaSource": {
-            "title": "Plasma source",
-            "description": "Plasma sources for which the model/software was developed, e.g. APPJ, DBD, CCP, MW",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        },
-        "plasmaMedium": {
-            "title": "Plasma medium",
-            "description": "Media described by the model/software, e.g. Ar, air, water",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        },
-        "pressureMin": {
-            "title": "Minimum gas pressure [Pa]",
-            "description": "Minimum pressure of the gas for which the model/software is valid",
-            "type": "number"
-        },
-        "pressureMax": {
-            "title": "Maximum gas pressure [Pa]",
-            "description": "Maximum pressure of the gas for which the model/software is valid",
-            "type": "number"
-        },
-        "plasmaState": {
-            "title": "Plasma state",
-            "description": "State of thermodynamic equilibrium of the plasma described by the model/software",
-            "type": "array",
-            "enum": [
-                "thermal",
-                "non-thermal"
+        "plasma": {
+            "title": "Plasma",
+            "description": "Additional information for plasma modelling and simulations",
+            "type": "object",
+            "required": [
+                "plasmaState"
             ],
-            "items": {
-                "type": "string"
-            },
-            "minItems": 1,
-            "maxItems": 2
+            "properties": {
+                "plasmaSource": {
+                    "title": "Plasma source",
+                    "description": "Plasma sources for which the model/software was developed, e.g. APPJ, DBD, CCP, MW",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "plasmaMedium": {
+                    "title": "Plasma medium",
+                    "description": "Media described by the model/software, e.g. Ar, air, water",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "pressureMin": {
+                    "title": "Minimum gas pressure [Pa]",
+                    "description": "Minimum pressure of the gas for which the model/software is valid",
+                    "type": "number"
+                },
+                "pressureMax": {
+                    "title": "Maximum gas pressure [Pa]",
+                    "description": "Maximum pressure of the gas for which the model/software is valid",
+                    "type": "number"
+                },
+                "plasmaState": {
+                    "title": "Plasma state",
+                    "description": "State of thermodynamic equilibrium of the plasma described by the model/software",
+                    "type": "array",
+                    "enum": [
+                        "thermal",
+                        "non-thermal"
+                    ],
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
         },
         "software": {
             "title": "Software",
             "description": "Further information for software packages",
             "type": "object",
             "required": [
-                "license",
-                "requirements"
+                "requirements",
+                "license"
             ],
             "properties": {
-                "license": {
-                    "title": "License",
-                    "description": "Legal and licensing information",
-                    "type": "string",
-                    "enum": [
-                        "GPLv3",
-                        "GPLv2",
-                        "LGPL",
-                        "MIT",
-                        "Apache",
-                        "proprietary",
-                        "All rights reserved"
-                    ]
-                },
                 "repository": {
                     "title": "Repository",
                     "description": "Link to the software repository where the code is maintained",
@@ -156,6 +147,20 @@
                     "title": "Runtime requirements",
                     "description": "Requirements to run the software, e.g. operating system, dependencies",
                     "type": "string"
+                },
+                "license": {
+                    "title": "License",
+                    "description": "Legal and licensing information",
+                    "type": "string",
+                    "enum": [
+                        "GPLv3",
+                        "GPLv2",
+                        "LGPL",
+                        "MIT",
+                        "Apache",
+                        "proprietary",
+                        "All rights reserved"
+                    ]
                 }
             }
         }
@@ -165,8 +170,7 @@
         "identifier",
         "group",
         "contributors",
-        "approach",
-        "dimensionality",
-        "plasmaState"
+        "purpose",
+        "approach"
     ]
 }

@@ -1,0 +1,121 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "some schema id",
+    "title": "some schema title",
+    "description": "some schema description",
+    "type": "object",
+    "properties": {
+        "model": {
+            "title": "Model",
+            "description": "Details on the used model/method",
+            "type": "object",
+            "required": [
+                "modelDescription",
+                "modelIdentifier"
+            ],
+            "properties": {
+                "modelDescription": {
+                    "title": "Model description",
+                    "description": "Description of the model/method, including boundary conditions, initial values",
+                    "type": "string"
+                },
+                "modelIdentifier": {
+                    "title": "Model identifier",
+                    "description": "Identifier/reference for the model/method e.g. URL, DOI",
+                    "type": "string"
+                }
+            }
+        },
+        "solver": {
+            "title": "Solver",
+            "description": "Details on the solution procedure",
+            "type": "object",
+            "required": [
+                "solverDescription",
+                "solverParameters"
+            ],
+            "properties": {
+                "solverDescription": {
+                    "title": "Solver description",
+                    "description": "Description of the solution procedure, including discretization methods, numerical solvers",
+                    "type": "string"
+                },
+                "solverParameters": {
+                    "title": "Solver parameters",
+                    "description": "Specification of important parameters, such as time-step size, grid spacing, super particle weighting etc.",
+                    "type": "string"
+                }
+            }
+        },
+        "software": {
+            "title": "Software",
+            "description": "Details on the used software",
+            "type": "object",
+            "required": [
+                "softwareName",
+                "softwareVersion",
+                "softwareIdentifier"
+            ],
+            "properties": {
+                "softwareName": {
+                    "title": "Software name",
+                    "description": "Name of the software",
+                    "type": "string"
+                },
+                "softwareVersion": {
+                    "title": "Software version/release",
+                    "description": "Used version of the software/method",
+                    "type": "string"
+                },
+                "softwareIdentifier": {
+                    "title": "Software identifier",
+                    "description": "Identifier of the used software/method, e.g. URL, DOI",
+                    "type": "string"
+                }
+            }
+        },
+        "hardware": {
+            "title": "Hardware",
+            "description": "Details on the used Hardware",
+            "type": "object",
+            "required": [
+                "hardwareEnv",
+                "hardwareTime"
+            ],
+            "properties": {
+                "hardwareEnv": {
+                    "title": "Runtime environment",
+                    "description": "Description of the runtime environment, e.g. machine, CPU, GPU",
+                    "type": "string"
+                },
+                "hardwareTime": {
+                    "title": "Calculation time",
+                    "description": "Description of typical calculation times",
+                    "type": "string"
+                }
+            }
+        },
+        "procedure": {
+            "title": "Procedure",
+            "description": "Detais on the study/procedure",
+            "type": "object",
+            "required": [
+                "procedureDescription"
+            ],
+            "properties": {
+                "procedureDescription": {
+                    "title": "Procedure",
+                    "description": "Description of the procedure/study, e.g. which parameters are changed",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "model",
+        "solver",
+        "software",
+        "hardware",
+        "procedure"
+    ]
+}

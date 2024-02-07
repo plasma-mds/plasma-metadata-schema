@@ -6,25 +6,17 @@
 <dd>Normalization (reference for fit)</dd>
 <dt>Intensity factor</dt>
 <dd>Intensity factor (name/storage)</dd>
-<dt>Transmission function</dt>
-<dd>Transmission function used (name/storage)</dd>
 <dt>Reference paper</dt>
 <dd>Information about the reference paper</dd>
-<dt>Peak name</dt>
-<dd>Name of the analysed XPS peak</dd>
+<dt>Analysed component</dt>
+<dd>Analysed component</dd>
 <dt>Background</dt>
 <dd>Background fit</dd>
 <dt>Fit type</dt>
 <dd>Fit type</dd>
-<dt>LineShape</dt>
-<dd>Line shape</dd>
-<dt>Asymmetry or comments</dt>
-<dd>Asymmetry in peak? or other comments</dd>
-<dt>Residual of peak fit</dt>
-<dd>Residual of peak fit</dd>
-<dt>Analysed component</dt>
-<dd>Analysed component</dd>
-<dt>Chemical aissigment</dt>
+<dt>FitProfile</dt>
+<dd>Fit profile</dd>
+<dt>Chemical aissignement</dt>
 <dd>Chemical assignement of component</dd>
 <dt>Position component [eV]</dt>
 <dd>Absolut or relative position for component</dd>
@@ -32,6 +24,10 @@
 <dd>FWHM</dd>
 <dt>Profile ratio</dt>
 <dd>Lorentz/Gau\u00df ratio</dd>
+<dt>Asymmetry or comments</dt>
+<dd>Asymmetry in peak? or other comments</dd>
+<dt>Residual of peak fit</dt>
+<dd>Residual of peak fit</dd>
 <dt>Stoichiometric composition</dt>
 <dd>Stoichiometric composition</dd>
 </dl>

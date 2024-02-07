@@ -20,19 +20,14 @@
             "description": "Intensity factor (name/storage)",
             "type": "string"
         },
-        "TransFunc": {
-            "title": "Transmission function",
-            "description": "Transmission function used (name/storage)",
-            "type": "string"
-        },
         "ReferencePaper": {
             "title": "Reference paper",
             "description": "Information about the reference paper",
             "type": "string"
         },
-        "PeakName": {
-            "title": "Peak name",
-            "description": "Name of the analysed XPS peak",
+        "Component": {
+            "title": "Analysed component",
+            "description": "Analysed component",
             "type": "array",
             "items": {
                 "type": "string"
@@ -49,32 +44,13 @@
             "description": "Fit type",
             "type": "boolean"
         },
-        "LineShape": {
-            "title": "LineShape",
-            "description": "Line shape",
-            "type": "string"
-        },
-        "Asymmetry": {
-            "title": "Asymmetry or comments",
-            "description": "Asymmetry in peak? or other comments",
-            "type": "string"
-        },
-        "Residual": {
-            "title": "Residual of peak fit",
-            "description": "Residual of peak fit",
-            "type": "string"
-        },
-        "Component": {
-            "title": "Analysed component",
-            "description": "Analysed component",
-            "type": "array",
-            "items": {
-                "type": "string"
-            },
-            "minItems": 1
+        "Profile": {
+            "title": "FitProfile",
+            "description": "Fit profile",
+            "type": "boolean"
         },
         "ChemicalAssign": {
-            "title": "Chemical aissigment",
+            "title": "Chemical aissignement",
             "description": "Chemical assignement of component",
             "type": "string"
         },
@@ -93,6 +69,16 @@
             "description": "Lorentz/Gau\\u00df ratio",
             "type": "string"
         },
+        "Asymmetry": {
+            "title": "Asymmetry or comments",
+            "description": "Asymmetry in peak? or other comments",
+            "type": "string"
+        },
+        "Residual": {
+            "title": "Residual of peak fit",
+            "description": "Residual of peak fit",
+            "type": "number"
+        },
         "Composition": {
             "title": "Stoichiometric composition",
             "description": "Stoichiometric composition",
@@ -103,12 +89,10 @@
         "General",
         "Normalization",
         "IntensityFactor",
-        "TransFunc",
-        "PeakName",
+        "Component",
         "Background",
         "Fit type",
-        "LineShape",
-        "Component",
+        "Profile",
         "Position",
         "FWHM"
     ]

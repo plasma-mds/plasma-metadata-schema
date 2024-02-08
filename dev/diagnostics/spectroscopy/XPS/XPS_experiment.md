@@ -1,11 +1,11 @@
 |Id  |  Key                  | Title                 |Unit | Description                                               | Type    | Occ | Allowed values |
 |---- | -------------------   | ----------------------| ---- | ----------------------------------------------------------| ------- | -------- | ------------- |
 | 1 | Experiment | Experiment description|  | Description of the experiment| | 1|  |
-| 1.1 | BeamDiameterValue  | XPS beam diameter  | µm | Beam diameter of the XPS measurement  | number | 1 | |
-| 1.2 | Tilt      | Tilt angle    |  °  | Tilt angle of measurement    | number | 1 | |
-| 1.3 | PressureValue   | XPS pressure    |  | Pressure during measurements    | string | 1 | |
-| 1.4 | Holder     | Sample holder   |  | Which sample holder is used    | string | 1 | |
-|1.5| AngleRes| Angle resolved|°|Incident angle of sample holder to normal|string|0||
+| 1.1 | BeamDiameterValue  | XPS beam diameter  | µm | Beam diameter of the XPS measurement  | number | 1 |  |
+| 1.2 | Tilt      | Tilt angle    |  °  | Tilt angle of measurement    | number | 1 |  |
+| 1.3 | PressureValue   | XPS pressure    |  | Pressure during measurements    | string | 1 |  |
+| 1.4 | Holder     | Sample holder   |  | Which sample holder is used    | string | 1 |  |
+|1.5| AngleRes| Angle resolved|°|Incident angle of sample holder to normal|string|0|  |
 | 2 | SampleID | Sample name |  | Number or sample name | string | 1 |  |
 | 2.1 | FileName | File name |  | File name of this measurement | string | 1 |  |
 | 2.2 | ReceivedCondition | As received condition |  | Condition how the sample was received to the XPS chamber (expsoure time) | string | 1 |  |

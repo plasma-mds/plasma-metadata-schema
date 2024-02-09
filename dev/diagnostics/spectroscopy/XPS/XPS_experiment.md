@@ -12,14 +12,13 @@
 | 2.4 | Neutralize | Neutralization conditions |  | Neutralization on/off | boolean | 1 |  |
 | 2.5 | RepeatNumber | Repeats of measurement |  | Number of repeats of the whole measurement setting | number | 0 |  |
 | 3 | Peak | Peak description| | Description of the peaks | | 1-n |  |
-| 3.1 | Sample | Sample |  | Name of the measured sample (reffering to ID/name of sample from the top) | string | 1-n |  |
-| 3.2 | PeakName | XPS peak name |  | Name of the measured peak including the orbital (e.g. O1s, SURV) | string | 1 |  |
-| 3.3 | PassEnergy | ValuePass energy |  eV | Value of pass energy for FAT | number | 1 |  |
-| 3.4 | RetardationValue | Retardation ratio |  | Retardation ratio (eV) | number | 1 |  |
-| 3.5 | LowerBE | XPS lower binding energy | eV | Lower Binding energy of measurement  | number | 1 |  |
-| 3.6 | UpperBE | XPS upper binding energy | eV | Upper Binding energy of measurement  | number | 1 |  |
-| 3.7 | AcquisitionTime | Acquisition time |  | Total signal accumulation time | number | 1 |  |
-| 3.8 | StepWidth | XPS step width  | eV | Step width of detailed XPS measurement  | number | 1 |  |
-| 3.9 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
-| 3.10 | SampleComment | Comment |  | Indicate with any comment specific information about the sample | string | 1 |  |
+| 3.1 | PeakName | XPS peak name |  | Name of the measured peak including the orbital (e.g. O1s, SURV) | string | 1 |  |
+| 3.2 | PassEnergy | ValuePass energy |  eV | Value of pass energy for FAT | number | 1 |  |
+| 3.3 | RetardationValue | Retardation ratio |  | Retardation ratio (eV) | number | 1 |  |
+| 3.4 | LowerBE | XPS lower binding energy | eV | Lower Binding energy of measurement  | number | 1 |  |
+| 3.5 | UpperBE | XPS upper binding energy | eV | Upper Binding energy of measurement  | number | 1 |  |
+| 3.6 | AcquisitionTime | Acquisition time |  | Total signal accumulation time | number | 1 |  |
+| 3.7 | StepWidth | XPS step width  | eV | Step width of detailed XPS measurement  | number | 1 |  |
+| 3.8 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
+| 3.9 | SampleComment | Comment |  | Indicate with any comment specific information about the sample | string | 1 |  |
 | 4 | Sputtering | Sputtering description| | Description of the sputtering | string| 0|  |

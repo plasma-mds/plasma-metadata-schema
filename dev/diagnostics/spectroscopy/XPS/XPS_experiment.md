@@ -15,10 +15,9 @@
 | 3.1 | PeakName | XPS peak name |  | Name of the measured peak including the orbital (e.g. O1s, SURV) | string | 1 |  |
 | 3.2 | PassEnergy | ValuePass energy |  eV | Value of pass energy for FAT | number | 1 |  |
 | 3.3 | RetardationValue | Retardation ratio |  | Retardation ratio (eV) | number | 1 |  |
-| 3.4 | LowerBE | XPS lower binding energy | eV | Lower Binding energy of measurement  | number | 1 |  |
-| 3.5 | UpperBE | XPS upper binding energy | eV | Upper Binding energy of measurement  | number | 1 |  |
-| 3.6 | AcquisitionTime | Acquisition time |  | Total signal accumulation time | number | 1 |  |
-| 3.7 | StepWidth | XPS step width  | eV | Step width of detailed XPS measurement  | number | 1 |  |
-| 3.8 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
-| 3.9 | SampleComment | Comment |  | Indicate with any comment specific information about the sample | string | 1 |  |
+| 3.4 | BE | XPS binding energy interval | eV | Binding energy interval of measurement  | number | 1 |  |
+| 3.5 | AcquisitionTime | Acquisition time |  | Total signal accumulation time | number | 1 |  |
+| 3.6 | StepWidth | XPS step width  | eV | Step width of detailed XPS measurement  | number | 1 |  |
+| 3.7 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
+| 3.8 | SampleComment | Comment |  | Indicate with any comment specific information about the sample | string | 1 |  |
 | 4 | Sputtering | Sputtering description| | Description of the sputtering | string| 0|  |

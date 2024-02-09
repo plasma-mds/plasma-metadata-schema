@@ -20,4 +20,11 @@
 | 3.6 | StepWidth | XPS step width  | eV | Step width of detailed XPS measurement  | number | 1 |  |
 | 3.7 | ScanNumber | Number of scans |  | Number of scans for one peak | number | 1 |  |
 | 3.8 | SampleComment | Comment |  | Indicate with any comment specific information about the sample | string | 1 |  |
-| 4 | Sputtering | Sputtering description| | Description of the sputtering | string| 0|  |
+| 5 | SampleHandling | Sample Handling| | Procedure of sample handling | string| 0|  |
+| 5.1| Sputtering | Sputtering description| | Description of the sputtering | string| 0|  |
+| 5.2 | Sputtering | Sputtering description| | Description of the sputtering | string| 0|  |
+| 5.3 | SputterEnergy | Sputtering energy| eV| Energy of sputter process | string| 0|  |
+| 5.4 | SputteringTime | Sputter time| | Duration of the sputtering process | string| 0|  |
+| 5.5 | PressureVar | Pressure variation| | Pressure variation (indicate start and end pressure) | string| 0|  |
+| 5.6 | TempVar | Temperature variation| | Temperature variation (indicate start and end temperature) | string| 0|  |
+| 5.2 | OhterTreat | Other Treatment during XPS| | Other treatment during the PS measurement | string| 0|  |

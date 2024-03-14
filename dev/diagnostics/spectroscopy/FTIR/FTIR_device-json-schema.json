@@ -4,5 +4,81 @@
     "title": "some schema title",
     "description": "some schema description",
     "type": "object",
-    "properties": {}
+    "properties": {
+        "name": {
+            "title": "Name",
+            "description": "Name of the MS device",
+            "type": "string"
+        },
+        "sn": {
+            "title": "Serial number",
+            "description": "Serial number of the device",
+            "type": "string"
+        },
+        "FTIRSource": {
+            "title": "FTIR source",
+            "description": "FTIR light source",
+            "type": "string"
+        },
+        "FTIRSourceType": {
+            "title": "FTIR source type",
+            "description": "FTIR source internal or external",
+            "type": "string",
+            "enum": [
+                "internal / external"
+            ]
+        },
+        "FTIROpus": {
+            "title": "FTIR Opus version",
+            "description": "OPUS version of the FTIR",
+            "type": "number"
+        },
+        "FTIRAPT": {
+            "title": "FTIR aperture",
+            "description": "Setting of aperture",
+            "type": "string"
+        },
+        "FTIRBMS": {
+            "title": "FTIR beam splitter",
+            "description": "FTIR beam splitter",
+            "type": "string",
+            "enum": [
+                "KBR"
+            ]
+        },
+        "FTIRMode": {
+            "title": "FTIR measurement mode",
+            "description": "Measurement mode (reflectance, transmission)",
+            "type": "boolean"
+        },
+        "FTIRMirror": {
+            "title": "FTIR mirror",
+            "description": "FTIR mirror",
+            "type": "string"
+        },
+        "FTIRDect": {
+            "title": "FTIR detector",
+            "description": "Detector type",
+            "type": "string",
+            "enum": [
+                "MCT (cooled), DTGS (room temp.)"
+            ]
+        },
+        "FTIRDectsn": {
+            "title": "FTIR detector serial number",
+            "description": "Detector serial number",
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "FTIRSource",
+        "FTIRSourceType",
+        "FTIROpus",
+        "FTIRAPT",
+        "FTIRBMS",
+        "FTIRMode",
+        "FTIRDect",
+        "FTIRDectsn"
+    ]
 }

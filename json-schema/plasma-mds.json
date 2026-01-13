@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "https://www.plasma-mds.org/schema/plasma-mds.json#",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://www.plasma-mds.org/schema/plasma-mds.json#",
   "title": "Plasma Metadata Schema (Plasma-MDS)",
   "description": "Metadata schema for annotation of research data (datasets) in the field of plasma science and technology. Aims to be attached to generic schemata like DCAT or DataCite Metadata Schema. Validates a Plasma-MDS extension.",
   "type": "object",

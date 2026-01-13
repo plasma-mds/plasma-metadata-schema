@@ -76,7 +76,7 @@
             "type": "string"
         },
         "ambTemperature": {
-            "title": "Ambient temperature [\\u00b0C]",
+            "title": "Ambient temperature [^\u00b0 C],
             "description": "Temperature within lab/environment",
             "type": "number"
         },
